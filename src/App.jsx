@@ -2,6 +2,8 @@ import Home from "./components/Home";
 import About from "./components/About.jsx";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Separador from "./components/Separador.jsx";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
