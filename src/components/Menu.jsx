@@ -1,24 +1,59 @@
 import { useState } from "react";
+import { gsap } from "gsap";
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+
+    if (isOpen) {
+      gsap.to(".top-bar", {
+        rotate: 0,
+        x: 0,
+        y: 0,
+        duration: 0.4,
+        ease: "power3.out",
+      });
+      gsap.to(".bottom-bar", {
+        rotate: 0,
+        x: 0,
+        y: 0,
+        duration: 0.4,
+        width: "75%",
+        ease: "power3.out",
+      });
+    } else {
+      gsap.to(".top-bar", {
+        rotate: 45,
+        y: 8,
+        x: -5,
+        duration: 0.4,
+        ease: "power3.out",
+      });
+      gsap.to(".bottom-bar", {
+        rotate: -45,
+        x: -5,
+        y: -10,
+        duration: 0.4,
+        width: "100%",
+        ease: "power3.out",
+      });
+    }
+  };
 
   return (
     <div className="relative">
       {/* Botón Hamburguesa */}
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={handleClick}
         className="flex flex-col justify-between items-end w-12 h-5 z-10 relative focus:outline-none"
       >
         <span
-          className={`block h-0.5 bg-gray-800 rounded transition-all duration-500 ${
-            isOpen ? "rotate-45 translate-y-2 w-full" : "w-full"
-          }`}
+          className={`top-bar block h-0.5 bg-gray-800 rounded w-full`}
         ></span>
         <span
-          className={`block h-0.5 bg-gray-800 rounded transition-all duration-500 ${
-            isOpen ? "-rotate-45 -translate-y-5 w-full" : "w-3/4"
-          }`}
+          className={`bottom-bar block h-0.5 bg-gray-800 rounded w-3/4`}
         ></span>
       </button>
 
