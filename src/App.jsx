@@ -68,9 +68,11 @@ function App() {
   return (
     <>
       <Home />
+      <Separador />
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 }
