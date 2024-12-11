@@ -20,6 +20,12 @@ html {
   font-weight: 500;
 }
 
+.footer {
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-color: #462749;
+}
+
 body {
   overflow: hidden;
 }
