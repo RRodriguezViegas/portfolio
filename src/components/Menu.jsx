@@ -47,7 +47,7 @@ export default function HamburgerMenu() {
       {/* Botón Hamburguesa */}
       <button
         onClick={handleClick}
-        className="flex flex-col justify-between items-end w-12 h-5 z-10 relative focus:outline-none"
+        className="flex flex-col justify-between items-end w-12 h-5 z-50 relative focus:outline-none"
       >
         <span
           className={`top-bar block h-0.5 bg-gray-800 rounded w-full`}
@@ -59,7 +59,7 @@ export default function HamburgerMenu() {
 
       {/* Menú flotante */}
       <nav
-        className={`z-50 w-64 h-96 absolute top-12 right-0 bg-white shadow-lg p-4 rounded-lg transform transition-transform duration-300 ${
+        className={`z-10 w-80 h-96 absolute -top-6 right-0 bg-[#EAD6C9] shadow-lg p-4 rounded-lg transform transition-transform duration-300 ${
           isOpen ? "scale-100" : "scale-0"
         }`}
       >
