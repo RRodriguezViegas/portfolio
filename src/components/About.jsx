@@ -29,18 +29,24 @@ export default function About() {
         ref={horizontalRef}
         className="flex w-full h-full overflow-hidden snap-x snap-mandatory"
       >
-        <div className="flex-shrink-0 w-full h-full flex ">
+        <div className="flex-shrink-0 w-full h-full m-6">
           <h1 className="MuseoModerno text-9xl font-bold text-[#242038] cursor-default">
             I <span className="highlight">design</span>,{" "}
             <span className="highlight">code</span>,{" "}
             <span className="highlight">game</span> & <br />
             <span className="highlight">cycle</span>.
           </h1>
+          <p className="text-3xl text-[#242038] cursor-default w-1/4">
+            I'm a full-stack web developer based in Argentina with a love for
+            creativity, functionality, and impact. I'm detail-oriented, always
+            eager to learn, and I take pride in approaching challenges with a
+            positive mindset.
+          </p>
         </div>
-        <div className="flex-shrink-0 w-full h-full flex items-center justify-center">
+        <div className="flex-shrink-0 w-full h-full">
           <h1 className="text-5xl font-bold">Horizontal Section 2</h1>
         </div>
-        <div className="flex-shrink-0 w-full h-full flex items-center justify-center">
+        <div className="flex-shrink-0 w-full h-full">
           <h1 className="text-5xl font-bold">Horizontal Section 3</h1>
         </div>
       </div>
