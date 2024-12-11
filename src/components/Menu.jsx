@@ -8,16 +8,16 @@ export default function HamburgerMenu() {
       {/* Botón Hamburguesa */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex flex-col justify-between w-10 h-8 z-10 relative"
+        className="flex flex-col justify-between items-end w-12 h-5 z-10 relative focus:outline-none"
       >
         <span
-          className={`block h-1 bg-gray-800 rounded transition-all duration-300 ${
-            isOpen ? "rotate-45 translate-y-2.5" : "w-full"
+          className={`block h-0.5 bg-gray-800 rounded transition-all duration-500 ${
+            isOpen ? "rotate-45 translate-y-2 w-full" : "w-full"
           }`}
         ></span>
         <span
-          className={`block h-1 bg-gray-800 rounded transition-all duration-300 ${
-            isOpen ? "-rotate-45 -translate-y-2.5" : "w-3/4"
+          className={`block h-0.5 bg-gray-800 rounded transition-all duration-500 ${
+            isOpen ? "-rotate-45 -translate-y-5 w-full" : "w-3/4"
           }`}
         ></span>
       </button>
