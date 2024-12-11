@@ -19,23 +19,25 @@ function Home() {
 
   return (
     <>
-      <div className="section h-screen">
+      <div className="section h-screen relative">
         <div className="mx-96 pt-12 flex justify-between">
           <h1 className="text-5xl text-[#242038]">Rama</h1>
           <HamburgerMenu />
         </div>
-        <div className="p-32 pt-64">
-          <h1 className="appear text-center text-2xl text-[#242038]">
-            Hey! I'm <span className="text-[#8332AC]"> Rama </span>
-          </h1>
-          <h2 className="mt-6 appear text-center text-5xl font-bold text-[#242038]">
-            I transform ideas into <br /> functional and visually stunning{" "}
-            <br />
-            web experiences.
-          </h2>
-          <p className="mt-20 appear text-center text-2xl underline text-[#242038]">
-            Let's create something amazing!
-          </p>
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center h-full">
+          <div className="flex flex-col">
+            <h1 className="appear text-2xl text-[#242038]">
+              Hey! I'm <span className="text-[#8332AC]"> Rama </span>
+            </h1>
+            <h2 className="mb-16 mt-6 appear text-5xl font-bold text-[#242038]">
+              I transform ideas into <br /> functional and visually stunning{" "}
+              <br />
+              web experiences.
+            </h2>
+            <p className="appear text-2xl underline text-[#242038]">
+              <a href="#">Let's create something amazing! &rarr;</a>
+            </p>
+          </div>
         </div>
       </div>
     </>
