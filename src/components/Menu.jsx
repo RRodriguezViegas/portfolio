@@ -50,10 +50,10 @@ export default function HamburgerMenu() {
         className="flex flex-col justify-between items-end w-12 h-5 z-50 relative focus:outline-none"
       >
         <span
-          className={`top-bar block h-0.5 bg-gray-800 rounded w-full`}
+          className={`top-bar block h-0.5 bg-[#242038] rounded w-full`}
         ></span>
         <span
-          className={`bottom-bar block h-0.5 bg-gray-800 rounded w-3/4`}
+          className={`bottom-bar block h-0.5 bg-[#242038] rounded w-3/4`}
         ></span>
       </button>
 
