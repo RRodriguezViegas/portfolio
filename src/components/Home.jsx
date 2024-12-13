@@ -15,6 +15,29 @@ function Home() {
       stagger: 0.15,
     });
     gsap.from(".appear", { opacity: 0, duration: 1.2, stagger: 0.15 });
+
+    gsap.to(".left-bar", { rotate: 25, duration: 0.6, x: 2, delay: 2.6 });
+    gsap.to(".right-bar", { rotate: -25, duration: 0.6, x: -2, delay: 2.6 });
+
+    gsap.to(".left-bar", {
+      y: -10,
+      duration: 1,
+      delay: 3.2,
+      yoyo: true,
+      repeat: -1,
+      ease: "power1.inOut",
+    });
+    gsap.to(".right-bar", {
+      y: -10,
+      duration: 1,
+      delay: 3.2,
+      yoyo: true,
+      repeat: -1,
+      ease: "power1.inOut",
+    });
+
+    gsap.from(".left-bar", { opacity: 0, duration: 1.2, delay: 2.8 });
+    gsap.from(".right-bar", { opacity: 0, duration: 1.2, delay: 2.8 });
   });
 
   return (
@@ -25,7 +48,7 @@ function Home() {
           <HamburgerMenu />
         </div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center h-full">
-          <div className="flex flex-col">
+          <div className="flex flex-col items-center">
             <h1 className="appear text-2xl text-[#242038]">
               Hey! I'm <span className="text-[#8332AC]"> Rama </span>
             </h1>
@@ -38,6 +61,12 @@ function Home() {
               <a href="#">Let's create something amazing! &rarr;</a>
             </p>
           </div>
+        </div>
+        <div className="flex justify-center absolute left-[calc(50%-36px)] bottom-20">
+          <span className={`left-bar h-0.5 bg-[#242038] rounded-xl w-9`}></span>
+          <span
+            className={`right-bar h-0.5 bg-[#242038] rounded-xl w-9`}
+          ></span>
         </div>
       </div>
     </>
