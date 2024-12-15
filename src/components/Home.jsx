@@ -65,7 +65,7 @@ function Home() {
               web experiences.
             </h2>
             <p className="appear text-2xl underline text-[#242038]">
-              <a href="#">Let's create something amazing! &rarr;</a>
+              <a href="#">Let's create something amazing!</a>
             </p>
           </div>
         </div>
