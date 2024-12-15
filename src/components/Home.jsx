@@ -51,7 +51,7 @@ function Home() {
       <div className="section h-screen relative">
         <div className="mx-96 pt-12 flex justify-between">
           <h1 className="text-5xl text-[#242038]">Rama</h1>
-          <HamburgerMenu />
+          <HamburgerMenu sections={sections} />
         </div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center h-full">
           <div className="flex flex-col items-center">
