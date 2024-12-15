@@ -50,6 +50,15 @@ export default function HamburgerMenu({ sections }) {
     }
   };
 
+  const handleClickInside = section => {
+    handleClick();
+    gsap.to(window, {
+      scrollTo: sections[section],
+      duration: 0.5,
+      ease: "power3.out",
+    });
+  };
+
   return (
     <div className="relative">
       {/* Botón Hamburguesa */}
