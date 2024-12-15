@@ -70,7 +70,7 @@ function App() {
 
   return (
     <>
-      <Home />
+      <Home sections={sections} />
       <Separador />
       <About />
       <Projects />
