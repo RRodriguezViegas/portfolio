@@ -80,23 +80,56 @@ export default function HamburgerMenu({ sections }) {
           isOpen ? "scale-100" : "scale-0"
         }`}
       >
-        <ul className="space-y-2">
-          <li>
-            <a href="#" className="text-gray-800 font-bold hover:text-blue-500">
-              Inicio
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-gray-800 font-bold hover:text-blue-500">
-              Servicios
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-gray-800 font-bold hover:text-blue-500">
-              Contacto
-            </a>
-          </li>
-        </ul>
+        <section>
+          <ul className="space-y-6 text-2xl text-[#242038]">
+            <li>
+              <button onClick={() => handleClickInside(1)}>About Me</button>
+            </li>
+            <li>
+              <button onClick={() => handleClickInside(2)}>My Work</button>
+            </li>
+            <li>
+              <button onClick={() => handleClickInside(3)}>Contact</button>
+            </li>
+            <li>
+              <a href="/Ramiro_Rodriguez_Viegas_Resume.pdf" download>
+                Download CV
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section className="mx-10">
+          <ul className="flex flex-row justify-between items-center text-2xl text-[#242038]">
+            <li>
+              <a
+                href="https://github.com/RRodriguezViegas"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={GitHubIcon} alt="" width="30" height="30" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ramiro-rodriguez-viegas-1562171aa/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={LinkedInIcon} alt="" width="30" height="30" />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src={EmailIcon} alt="" width="30" height="30" />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src={InstagramIcon} alt="" width="30" height="30" />
+              </a>
+            </li>
+          </ul>
+        </section>
       </nav>
     </div>
   );
