@@ -11,8 +11,11 @@ import ScrollToPlugin from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollToPlugin);
 
 function App() {
+  const [sections, setSections] = useState([]);
+
   useEffect(() => {
     const sections = document.querySelectorAll(".section");
+    setSections(sections);
     let isScrolling = false;
 
     // Detectar el scroll
