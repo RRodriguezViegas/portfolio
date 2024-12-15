@@ -106,7 +106,12 @@ export default function HamburgerMenu({ sections }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={GitHubIcon} alt="" width="30" height="30" />
+                <img
+                  src={GitHubIcon}
+                  alt="Github Icon"
+                  width="30"
+                  height="30"
+                />
               </a>
             </li>
             <li>
@@ -115,17 +120,27 @@ export default function HamburgerMenu({ sections }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={LinkedInIcon} alt="" width="30" height="30" />
+                <img
+                  src={LinkedInIcon}
+                  alt="LinkedIn Icon"
+                  width="30"
+                  height="30"
+                />
               </a>
             </li>
             <li>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src={EmailIcon} alt="" width="30" height="30" />
+                <img src={EmailIcon} alt="Email Icon" width="30" height="30" />
               </a>
             </li>
             <li>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <img src={InstagramIcon} alt="" width="30" height="30" />
+                <img
+                  src={InstagramIcon}
+                  alt="Instagram Icon"
+                  width="30"
+                  height="30"
+                />
               </a>
             </li>
           </ul>
