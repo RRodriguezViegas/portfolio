@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import HamburgerMenu from "./Menu";
