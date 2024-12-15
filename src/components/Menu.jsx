@@ -9,7 +9,7 @@ import InstagramIcon from "../assets/icons/instagram.svg";
 
 gsap.registerPlugin(ScrollToPlugin);
 
-export default function HamburgerMenu() {
+export default function HamburgerMenu({ sections }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
