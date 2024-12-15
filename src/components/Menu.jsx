@@ -76,7 +76,7 @@ export default function HamburgerMenu({ sections }) {
 
       {/* Menú flotante */}
       <nav
-        className={`z-10 w-80 h-96 absolute -top-6 right-0 bg-[#EAD6C9] shadow-lg p-4 rounded-lg transform transition-transform duration-300 ${
+        className={`flex justify-around flex-col z-10 w-80 h-96 absolute -top-6 right-0 menu-bg shadow-lg p-4 rounded-lg transform transition-transform duration-300 ${
           isOpen ? "scale-100" : "scale-0"
         }`}
       >
