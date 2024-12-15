@@ -1,11 +1,13 @@
 import React from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import { TextPlugin } from "gsap/TextPlugin";
 import HamburgerMenu from "./Menu";
 
+gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(useGSAP);
 
-function Home() {
+function Home({ sections }) {
   useGSAP(() => {
     gsap.to(".appear", {
       y: -25,
