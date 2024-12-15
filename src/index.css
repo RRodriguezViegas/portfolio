@@ -20,6 +20,17 @@ html {
   font-weight: 500;
 }
 
+.menu-bg {
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: radial-gradient(
+    142% 91% at 44% 45%,
+    #f7ece1 1%,
+    #ead6c9 32%,
+    #e0c9b9ff 71%
+  );
+}
+
 .footer {
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
