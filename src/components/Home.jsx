@@ -37,6 +37,13 @@ function Home() {
 
     gsap.from(".left-bar", { opacity: 0, duration: 1.2, delay: 2.8 });
     gsap.from(".right-bar", { opacity: 0, duration: 1.2, delay: 2.8 });
+
+    gsap.to(".rama", {
+      text: "Rama",
+      duration: 1,
+      ease: "power4.out",
+      delay: 0.4,
+    });
   });
 
   return (
@@ -49,7 +56,8 @@ function Home() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center h-full">
           <div className="flex flex-col items-center">
             <h1 className="appear text-2xl text-[#242038]">
-              Hey! I'm <span className="text-[#8332AC]"> Rama </span>
+              Hey! I'm{" "}
+              <span className="inline-block rama text-[#8332AC]"> aRam </span>
             </h1>
             <h2 className="mb-16 mt-6 appear text-5xl font-bold text-[#242038]">
               I transform ideas into <br /> functional and visually stunning{" "}
