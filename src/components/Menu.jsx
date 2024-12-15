@@ -1,5 +1,13 @@
 import { useState } from "react";
 import { gsap } from "gsap";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
+
+import LinkedInIcon from "../assets/icons/linkedin.svg";
+import GitHubIcon from "../assets/icons/github.svg";
+import EmailIcon from "../assets/icons/mail.svg";
+import InstagramIcon from "../assets/icons/instagram.svg";
+
+gsap.registerPlugin(ScrollToPlugin);
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
