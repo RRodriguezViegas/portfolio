@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { gsap } from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 
@@ -7,26 +7,8 @@ gsap.registerPlugin(ScrollToPlugin);
 export default function HamburgerMenu({ sections }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-
-    if (isOpen) {
-      gsap.to(".top-bar", {
-        rotate: 0,
-        x: 0,
-        y: 0,
-        duration: 0.4,
-        ease: "power3.out",
-      });
-      gsap.to(".bottom-bar", {
-        rotate: 0,
-        x: 0,
-        y: 0,
-        duration: 0.4,
-        width: "75%",
-        ease: "power3.out",
-      });
-    } else {
+  const animatedButton = open => {
+    if (open) {
       gsap.to(".top-bar", {
         rotate: 45,
         y: 8,
@@ -42,7 +24,27 @@ export default function HamburgerMenu({ sections }) {
         width: "100%",
         ease: "power3.out",
       });
+    } else {
+      gsap.to(".top-bar", {
+        rotate: 0,
+        x: 0,
+        y: 0,
+        duration: 0.4,
+        ease: "power3.out",
+      });
+      gsap.to(".bottom-bar", {
+        rotate: 0,
+        x: 0,
+        y: 0,
+        duration: 0.4,
+        width: "75%",
+        ease: "power3.out",
+      });
     }
+  };
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
   };
 
   const handleClickInside = section => {
@@ -53,6 +55,27 @@ export default function HamburgerMenu({ sections }) {
       ease: "power3.out",
     });
   };
+
+  useEffect(() => {
+    animatedButton(isOpen);
+  }, [isOpen]);
+
+  useEffect(() => {
+    const handleOutsideClick = e => {
+      if (
+        isOpen &&
+        !e.target.closest(".menu-bg") &&
+        !e.target.closest("button")
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [isOpen]);
 
   return (
     <div className="relative">
