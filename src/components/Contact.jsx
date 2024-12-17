@@ -20,7 +20,6 @@ function Contact() {
 
     return () => clearInterval(intervalo);
   }, []);
-  //! BRING ME THE HORIZON - 8 DEC 2024 - MOVISTAR ARENA
   return (
     <div className="section h-screen flex items-center justify-center text-[#242038]">
       <div className="w-3/4 h-3/6 flex flexs-row">
@@ -37,7 +36,7 @@ function Contact() {
             </div>
             <div>
               <p>Or if you prefer to chat</p>
-              <p className="font-light text-xl">+54 9 11 1234 5678</p>
+              <p className="font-light text-xl">+54 9 11 4146 1834</p>
             </div>
           </div>
         </section>
