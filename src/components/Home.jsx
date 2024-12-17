@@ -42,9 +42,9 @@ function Home({ sections }) {
 
     gsap.to(".rama", {
       text: "Rama",
-      duration: 1,
+      duration: 1.3,
       ease: "power4.out",
-      delay: 0.4,
+      delay: 0.3,
     });
   });
 
@@ -59,7 +59,7 @@ function Home({ sections }) {
           <div className="flex flex-col items-center">
             <h1 className="appear text-2xl text-[#242038]">
               Hey! I'm{" "}
-              <span className="inline-block rama text-[#8332AC]"> aRam </span>
+              <span className="inline-block rama text-[#8332AC]"> #%@& </span>
             </h1>
             <h2 className="mb-16 mt-6 appear text-5xl font-bold text-[#242038]">
               I transform ideas into <br /> functional and visually stunning{" "}
