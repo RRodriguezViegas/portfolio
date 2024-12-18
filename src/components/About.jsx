@@ -30,25 +30,31 @@ export default function About() {
         className="flex w-full h-full overflow-hidden snap-x snap-mandatory"
       >
         <div className="flex-shrink-0 flex flex-row w-full h-full ">
-          <div className="flex flex-col m-24 space-y-14">
-            <h1 className="MuseoModerno text-8xl 3xl:text-9xl font-bold text-[#242038] cursor-default">
-              I <span className="highlight">design</span>,{" "}
-              <span className="highlight">code</span>,{" "}
-              <span className="highlight">game</span> & <br />
-              <span className="highlight">cycle</span>.
-            </h1>
-            <p className="text-2xl 3xl:text-3xl text-[#242038] cursor-default w-4/12 text-justify">
-              I'm a full-stack web developer based in Argentina with a love for
-              creativity, functionality, and impact. I'm detail-oriented, always
-              eager to learn, and I take pride in approaching challenges with a
-              positive mindset.
-            </p>
-            <p className="text-2xl 3xl:text-3xl text-[#242038] cursor-default w-4/12 text-justify">
-              Let's scroll together and explores what makes me me!
-            </p>
-          </div>
-          <div className="absolute top-1/3 left-3/4 ">
-            <img src="me.JPEG" alt="" width="400" height="" />
+          <div className="flex flex-col m-24 space-y-14 items-center">
+            <div>
+              <h1 className="MuseoModerno text-8xl 3xl:text-9xl font-bold text-[#242038] cursor-default">
+                I <span className="highlight">design</span>,{" "}
+                <span className="highlight">code</span>,{" "}
+                <span className="highlight">game</span> & <br />
+                <span className="highlight">cycle</span>.
+              </h1>
+            </div>
+            <div className="flex flex-row space-x-96">
+              <div className="w-4/12 flex flex-col space-y-14">
+                <p className="text-2xl 3xl:text-3xl text-[#242038] cursor-default text-justify">
+                  I'm a full-stack web developer based in Argentina with a love
+                  for creativity, functionality, and impact. I'm
+                  detail-oriented, always eager to learn, and I take pride in
+                  approaching challenges with a positive mindset.
+                </p>
+                <p className="text-2xl 3xl:text-3xl text-[#242038] cursor-default text-justify">
+                  Let's scroll together and explores what makes me me!
+                </p>
+              </div>
+              <div className="w-[400px]">
+                <img src="me.JPEG" alt="Photo of me" />
+              </div>
+            </div>
           </div>
         </div>
         <div className="flex-shrink-0 w-full h-full">
