@@ -9,13 +9,39 @@ function Projects() {
       <p className="text-2xl text-[#242038] p-4">
         A selection of projects showcasing my skills in full-stack development.
       </p>
-      <div className="grid grid-cols-3 gap-4 m-8">
-        <div className="bg-gray-800 w-60 h-60 rounded-sm"></div>
-        <div className="bg-gray-800 w-60 h-60 rounded-sm"></div>
-        <div className="bg-gray-800 w-60 h-60 rounded-sm"></div>
-        <div className="bg-gray-800 w-60 h-60 rounded-sm"></div>
-        <div className="bg-gray-800 w-60 h-60 rounded-sm"></div>
-        <div className="bg-gray-800 w-60 h-60 rounded-sm"></div>
+      <div className="grid grid-cols-3 gap-5 m-8">
+        <div className="relative w-60 h-60 rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
+          <div className="absolute w-full h-full flex justify-center items-center bg-[url('src/assets/el-fortin-bg.jpg')] bg-cover bg-no-repeat blur-sm" />
+          <img
+            className="relative w-1/2 h-1/2 rounded-sm shadow-xl"
+            src="src\assets\el-fortin-logo.png"
+            alt="Logo El Fortin"
+          />
+        </div>
+        <div className="relative w-60 h-60 rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
+          <div className="absolute w-full h-full flex justify-center items-center bg-[url('src/assets/woofer-bg.png')] bg-contain blur-sm" />
+          <img
+            className="relative w-1/2 h-1/2 rounded-sm"
+            src="src/assets/woofer-logo.png"
+            alt="Logo Woofer"
+          />
+        </div>
+        <div className="relative w-60 h-60 rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
+          <div className="absolute w-full h-full flex justify-center items-center bg-[url('src/assets/drivers-bg.jpg')] bg-contain blur-sm" />
+          <img
+            className="relative w-1/2 h-1/2 rounded-sm"
+            src="src/assets/drivers-logo.png"
+            alt="Logo Drivers"
+          />
+        </div>
+        <div className="relative w-60 h-60 rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
+          <div className="absolute w-full h-full flex justify-center items-center bg-[url('src/assets/rama-portfolio-bg.png')] bg-contain blur-sm" />
+          <div className="relative w-1/2 h-1/2 rounded-sm">
+            <span className="text-9xl text-[#242038] MuseoModerno">R</span>
+          </div>
+        </div>
+        <div className="bg-gray-400 w-60 h-60 rounded-sm blur-sm"></div>
+        <div className="bg-gray-400 w-60 h-60 rounded-sm blur-sm"></div>
       </div>
       <span className="text-2xl text-[#242038] underline">
         <a href="#">All my projects</a>
