@@ -11,7 +11,7 @@ function Projects() {
       </p>
 
       <div className="grid grid-cols-3 gap-5 m-8">
-        <button>
+        <Link to={"/elfortin"}>
           <div className="relative w-60 h-60 rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
             <div className="absolute w-full h-full flex justify-center items-center bg-[url('src/assets/el-fortin-bg.jpg')] bg-cover bg-no-repeat blur-sm" />
             <img
@@ -20,7 +20,7 @@ function Projects() {
               alt="Logo El Fortin"
             />
           </div>
-        </button>
+        </Link>
 
         <button>
           <div className="relative w-60 h-60 rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
