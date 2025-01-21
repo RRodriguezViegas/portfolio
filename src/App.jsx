@@ -12,14 +12,16 @@ import Footer from "./components/Footer";
 import Separador from "./components/Separador.jsx";
 import SeparadorPC from "./components/SeparadorPC.jsx";
 import SeparadorFinal from "./components/Separador-final.jsx";
+import ElFortinDetail from "./components/El-Fortin-Detail.jsx";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 gsap.registerPlugin(ScrollToPlugin);
 
-function App() {
+function AppContent() {
   const [sections, setSections] = useState([]);
+  const location = useLocation();
 
   useEffect(() => {
     const sections = document.querySelectorAll(".section");
@@ -74,7 +76,7 @@ function App() {
     return () => {
       window.removeEventListener("wheel", handleScroll);
     };
-  }, []);
+  }, [location.pathname]);
 
   return (
     <Routes>
