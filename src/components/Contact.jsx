@@ -51,7 +51,7 @@ function Contact() {
     const actualizarHora = () => {
       const opciones = {
         timeZone: "America/Argentina/Buenos_Aires",
-        hour12: true,
+        hour12: false,
       };
       const fecha = new Date();
       const horaLocal = fecha.toLocaleTimeString("es-AR", opciones);
