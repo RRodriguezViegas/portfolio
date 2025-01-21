@@ -87,8 +87,12 @@ function Contact() {
   };
 
   return (
-    <div className="section h-screen flex items-center justify-center text-[#242038]">
-      <div className="w-3/4 h-3/6 flex flexs-row">
+    <div className="about-bg z-0 relative section h-screen flex items-center justify-center text-[#242038]">
+      <div className="parallax-circle -left-40 -bottom-40 absolute -z-10 rounded-full w-96 h-96 bg-[#ff61dd57] blur-md" />
+      <div className="parallax-pill left-3/4 absolute -z-10 rounded-full w-96 h-40 rotate-12 bg-[#ff61dd57] blur-md" />
+      <div className="parallax-oval left-1/4 top-8 absolute -z-10 rounded-full w-48 h-60 rotate-12 bg-[#ff61dd57] blur-md" />
+
+      <div className="w-3/4 h-3/6 flex flexs-row  bg-[#ffd4b82d] rounded-xl shadow-lg p-2 backdrop-blur-md">
         <section className="w-1/2 h-3/4 flex flex-col justify-between">
           <div>
             <h1 className="MuseoModerno text-7xl pb-5">Let's collaborate</h1>
