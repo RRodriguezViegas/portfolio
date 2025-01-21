@@ -4,13 +4,21 @@
 
 html {
   background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(75% 75% at 0% 83%,
+      #b38c6b38 0%,
+      #073aff00 100%),
+    radial-gradient(75% 75% at 79% 56%, #ffa4994d 0%, #073aff00 99%),
+    radial-gradient(75% 75% at 91% 6%, #ffb79d6e 0%, #073aff00 100%),
+    radial-gradient(75% 75% at 58% 101%, #ffc1996e 0%, #073aff00 100%),
+    radial-gradient(75% 75% at 12% 22%, #ffd8ca 18%, #073aff00 99%),
+    radial-gradient(142% 91% at -6% 74%, #ffe4da 1%, #ffe4da 99%);
+}
+
+.home-bg {
+  background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-image: radial-gradient(
-      113% 91% at -33% 4%,
-      #b800ff00 1%,
-      #a1008a 1%,
-      #b800ff00 99%
-    ),
+  background-image: radial-gradient(113% 91% at -33% 4%,#b800ff00 1%,#a1008a 1%, #b800ff00 99%),
     radial-gradient(142% 91% at -42% 79%, #b800ffd1 1%, #ff000000 99%),
     radial-gradient(75% 75% at 7% 35%, #6a1f8f66 0%, #073aff00 26%),
     radial-gradient(75% 75% at 33% 5%, #b6b0ffb5 0%, #073aff00 56%),
@@ -20,15 +28,39 @@ html {
   font-weight: 500;
 }
 
+.about-bg {
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(75% 75% at 0% 83%,
+      #b38c6b38 0%,
+      #073aff00 100%),
+    radial-gradient(75% 75% at 79% 56%, #ffa4994d 0%, #073aff00 99%),
+    radial-gradient(75% 75% at 91% 6%, #ffb79d6e 0%, #073aff00 100%),
+    radial-gradient(75% 75% at 58% 101%, #ffc1996e 0%, #073aff00 100%),
+    radial-gradient(75% 75% at 12% 22%, #ffd8ca 18%, #073aff00 99%),
+    radial-gradient(142% 91% at -6% 74%, #ffe4da 1%, #ffe4da 99%);
+}
+
+.parallax-bg {
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(75% 75% at 0% 83%,
+      #8332ac73 0%,
+      #073aff00 100%),
+    radial-gradient(75% 75% at 79% 56%, #e086 0%, #073aff00 99%),
+    radial-gradient(75% 75% at 91% 6%, #e086d3ad 0%, #073aff00 100%),
+    radial-gradient(75% 75% at 58% 101%, #462749b3 0%, #073aff00 100%),
+    radial-gradient(75% 75% at 12% 22%, #db32b678 18%, #073aff00 99%),
+    radial-gradient(142% 91% at -6% 74%, #a900ffc9 1%, #ffe4da 99%);
+}
+
 .menu-bg {
   background-size: 100% 100%;
   background-position: 0px 0px;
-  background-image: radial-gradient(
-    142% 91% at 44% 45%,
-    #f7ece1 1%,
-    #ead6c9 32%,
-    #e0c9b9ff 71%
-  );
+  background-image: radial-gradient(142% 91% at 44% 45%,
+      #f7ece1 1%,
+      #ead6c9 32%,
+      #e0c9b9ff 71%);
 }
 
 .footer {
@@ -60,7 +92,8 @@ body {
 }
 
 .highlight:hover {
-  color: #242038; /* Al hacer hover, el texto se vuelve negro */
+  color: #242038;
+  /* Al hacer hover, el texto se vuelve negro */
 }
 
 .highlight::before {
@@ -70,11 +103,15 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #f49dff; /* Color de fondo */
-  z-index: -1; /* El fondo está detrás del texto */
-  display: none; /* Inicialmente no se muestra el fondo */
+  background-color: #f49dff;
+  /* Color de fondo */
+  z-index: -1;
+  /* El fondo está detrás del texto */
+  display: none;
+  /* Inicialmente no se muestra el fondo */
 }
 
 .highlight:hover::before {
-  display: block; /* El fondo se muestra al hacer hover */
+  display: block;
+  /* El fondo se muestra al hacer hover */
 }
