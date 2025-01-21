@@ -69,6 +69,36 @@ html {
   background-color: #462749;
 }
 
+.separador {
+  background-size: 100% 100%;
+  background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+  background-image: radial-gradient(75% 75% at 141% -12%, #FFDABA 58%, #073AFF00 100%),
+  radial-gradient(75% 75% at 32% 2%, #DA68DB7A 0%, #073AFF00 98%),
+  radial-gradient(70% 75% at -11% -6%, #DA68DB 11%, #073AFF00 100%),
+  radial-gradient(75% 75% at 51% 109%, #FFD3C6 2%, #073AFF00 55%),
+  radial-gradient(35% 30% at 29% 105%, #FFD9CA 1%, #073AFF00 72%),
+  radial-gradient(75% 75% at 89% 107%, #FFCEBE 46%, #073AFF00 100%),
+  radial-gradient(75% 75% at 21% 111%, #FFD9CC 39%, #073AFF00 100%),
+  radial-gradient(142% 91% at 75% 22%, #FFCEBE 0%, #FFD3C4 100%);
+}
+.separadorPC {
+  background-size: 100% 100%;
+  background-position: 0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px,0px 0px;
+  background-image: radial-gradient(75% 75% at 82% 98%, #FCD1C1 7%, #B0606000 99%),
+  radial-gradient(75% 75% at 33% 109%, #FFDACC 44%, #FFDACC00 100%),
+  radial-gradient(75% 75% at 76% 101%, #FCD1C1 35%, #073AFF00 100%),
+  radial-gradient(75% 75% at 3% -14%, #F1D1C1 0%, #073AFF00 100%),
+  radial-gradient(75% 75% at 45% -2%, #FACCB9 0%, #FACCB900 65%),
+  radial-gradient(75% 75% at 60% 10%, #FFD4C5 27%, #073AFF00 100%),
+  radial-gradient(142% 91% at 75% 22%, #FFD2C4 0%, #FFD1AEFF 100%);
+}
+
+.separador-final {
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: linear-gradient(0deg, #462749 27%, #FCCDB8 100%);
+}
+
 body {
   overflow: hidden;
 }
