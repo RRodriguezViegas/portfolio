@@ -1,3 +1,9 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About.jsx";
 import Projects from "./components/Projects";
@@ -71,16 +77,34 @@ function App() {
   }, []);
 
   return (
-    <>
-      <Home sections={sections} />
-      {/* <About /> */}
-      <Separador />
-      <Projects />
-      <SeparadorPC />
-      <Contact />
-      <SeparadorFinal />
-      <Footer sections={sections} />
-    </>
+    <Routes>
+      {/* Ruta por defecto: Muestra los componentes normales con scroll */}
+      <Route
+        path="/"
+        element={
+          <>
+            <Home sections={sections} />
+            <Separador />
+            <Projects />
+            <SeparadorPC />
+            <Contact />
+            <SeparadorFinal />
+            <Footer sections={sections} />
+          </>
+        }
+      />
+
+      {/* Ruta específica: Solo muestra el componente detalle */}
+      <Route path="/elfortin" element={<ElFortinDetail />} />
+    </Routes>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
 
