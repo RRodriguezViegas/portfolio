@@ -4,6 +4,8 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Separador from "./components/Separador.jsx";
+import SeparadorPC from "./components/SeparadorPC.jsx";
+import SeparadorFinal from "./components/Separador-final.jsx";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
@@ -72,9 +74,10 @@ function App() {
     <>
       <Home sections={sections} />
       <Separador />
-      <About />
       <Projects />
+      <SeparadorPC />
       <Contact />
+      <SeparadorFinal />
       <Footer sections={sections} />
     </>
   );
