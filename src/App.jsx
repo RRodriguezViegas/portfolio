@@ -73,6 +73,7 @@ function App() {
   return (
     <>
       <Home sections={sections} />
+      {/* <About /> */}
       <Separador />
       <Projects />
       <SeparadorPC />
