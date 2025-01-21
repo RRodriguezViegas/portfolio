@@ -1,8 +1,12 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
   const horizontalRef = useRef(null);
+  const parallaxRef = useRef(null);
   let isScrolling = false;
 
   const scrollToSection = direction => {
@@ -11,20 +15,39 @@ export default function About() {
 
     const container = horizontalRef.current;
     const sectionWidth = container.offsetWidth;
+    const shapes = parallaxRef.current.querySelectorAll("div");
 
+    const scrollDistance = direction === "next" ? sectionWidth : -sectionWidth;
+
+    // Mover el contenedor horizontal
     gsap.to(container, {
-      scrollLeft:
-        direction === "next" ? "+=" + sectionWidth : "-=" + sectionWidth,
-      duration: 0.5,
-      ease: "power1.out",
+      scrollLeft: `+=${scrollDistance}`,
+      duration: 1.5,
+      ease: "power4.inOut",
       onComplete: () => {
         isScrolling = false;
       },
     });
+
+    // Efecto paralaje en las figuras
+    shapes.forEach((shape, index) => {
+      const depth = index * 0.1 + 0.3; // Velocidad del paralaje
+      const parallaxDistance = scrollDistance * depth;
+      gsap.to(shape, {
+        x: `-=${parallaxDistance}`,
+        duration: 1.5,
+        delay: 0.1,
+        ease: "power4.inOut",
+      });
+    });
   };
 
   return (
-    <div className="relative section h-screen flex items-center justify-center">
+    <div className="z-0 about-bg relative section h-screen flex items-center justify-center">
+      <div id="parallax" ref={parallaxRef}>
+        <div className="-z-10 absolute w-1/4 h-1/4 parallax-bg blur-md left-1/4 top-1/2" />
+      </div>
+
       <div
         ref={horizontalRef}
         className="flex w-full h-full overflow-hidden snap-x snap-mandatory"
@@ -41,13 +64,13 @@ export default function About() {
             </div>
             <div className="flex flex-row space-x-96">
               <div className="w-4/12 flex flex-col space-y-14">
-                <p className="text-2xl 3xl:text-3xl text-[#242038] cursor-default text-justify">
+                <p className="text-2xl 3xl:text-3xl text-[#242038] text-justify">
                   I'm a full-stack web developer based in Argentina with a love
                   for creativity, functionality, and impact. I'm
                   detail-oriented, always eager to learn, and I take pride in
                   approaching challenges with a positive mindset.
                 </p>
-                <p className="text-2xl 3xl:text-3xl text-[#242038] cursor-default text-justify">
+                <p className="text-2xl 3xl:text-3xl text-[#242038] text-justify">
                   Let's scroll together and explores what makes me me!
                 </p>
               </div>
