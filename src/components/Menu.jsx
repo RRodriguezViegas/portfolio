@@ -101,13 +101,19 @@ export default function HamburgerMenu({ sections }) {
         <section>
           <ul className="space-y-6 text-2xl text-[#242038]">
             <li>
-              <button onClick={() => handleClickInside(1)}>About Me</button>
+              <button
+                onClick={() => handleClickInside(1)}
+                disabled
+                className="text-[#24203873] cursor-not-allowed"
+              >
+                About Me
+              </button>
             </li>
             <li>
-              <button onClick={() => handleClickInside(2)}>My Work</button>
+              <button onClick={() => handleClickInside(1)}>My Work</button>
             </li>
             <li>
-              <button onClick={() => handleClickInside(3)}>Contact</button>
+              <button onClick={() => handleClickInside(2)}>Contact</button>
             </li>
             <li>
               <a href="/Ramiro_Rodriguez_Viegas_Resume.pdf" download>
