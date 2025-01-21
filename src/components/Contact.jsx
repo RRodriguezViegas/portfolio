@@ -115,7 +115,7 @@ function Contact() {
           <form onSubmit={sendEmail} ref={form}>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label htmlFor="name" className="text-xs">
+                <label htmlFor="name" className="text-md">
                   NAME
                 </label>
                 <br />
@@ -128,7 +128,7 @@ function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="name" className="text-xs">
+                <label htmlFor="name" className="text-md">
                   SUBJECT
                 </label>
                 <br />
@@ -141,7 +141,7 @@ function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="name" className="text-xs">
+                <label htmlFor="name" className="text-md">
                   COMPANY
                 </label>
                 <br />
@@ -153,7 +153,7 @@ function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="name" className="text-xs">
+                <label htmlFor="name" className="text-md">
                   EMAIL
                 </label>
                 <br />
@@ -166,7 +166,7 @@ function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="name" className="text-xs">
+                <label htmlFor="name" className="text-md">
                   MESSAGE
                 </label>
                 <br />
