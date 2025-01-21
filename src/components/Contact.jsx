@@ -69,10 +69,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_brfgrgt", // Reemplazá con tu Service ID
-        "template_0h91mk9", // Reemplazá con tu Template ID
+        "service_brfgrgt", // Service ID
+        "template_0h91mk9", // Template ID
         form.current,
-        "Kn3eZFFfhy85sc4QJ" // Reemplazá con tu Public Key
+        "Kn3eZFFfhy85sc4QJ" // Public Key
       )
       .then(
         result => {
