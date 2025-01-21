@@ -50,7 +50,7 @@ function Home({ sections }) {
 
   return (
     <>
-      <div className="section h-screen relative">
+      <div className="home-bg section h-screen relative">
         <div className="mx-96 pt-12 flex justify-between">
           <h1 className="text-5xl text-[#242038]">Rama</h1>
           <HamburgerMenu sections={sections} />
