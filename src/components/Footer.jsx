@@ -12,6 +12,9 @@ function Footer({ sections }) {
       ease: "power3.out",
     });
   };
+
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <div className="footer section h-screen flex flex-col justify-center">
@@ -33,7 +36,7 @@ function Footer({ sections }) {
           </div>
         </section>
         <section className="w-3/4 self-center flex justify-between pt-14 text-xl text-[#EAD6C9]">
-          <p>&copy; 2023 Rama. All rights reserved</p>
+          <p>&copy; {currentYear} Rama. All rights reserved</p>
           <div className="space-x-6">
             <a
               href="https://github.com/RRodriguezViegas"
