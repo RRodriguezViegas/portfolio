@@ -92,21 +92,25 @@ function Contact() {
       <div className="parallax-pill left-3/4 absolute -z-10 rounded-full w-96 h-40 rotate-12 bg-[#ff61dd57] blur-md" />
       <div className="parallax-oval left-1/4 top-8 absolute -z-10 rounded-full w-48 h-60 rotate-12 bg-[#ff61dd57] blur-md" />
 
-      <div className="w-3/4 h-3/6 flex flexs-row  bg-[#ffd4b82d] rounded-xl shadow-lg p-2 backdrop-blur-md">
-        <section className="w-1/2 h-3/4 flex flex-col justify-between">
+      <div className="w-3/4 h-5/6 lg:h-3/6 flex flex-col lg:flex-row  bg-[#ffd4b82d] rounded-xl border border-slate-800 p-2 backdrop-blur-md">
+        <section className="w-full lg:w-1/2 h-3/4 flex flex-col justify-between">
           <div>
             <h1 className="MuseoModerno text-7xl pb-5">Let's collaborate</h1>
-            <h3 className="text-2xl">Buenos Aires, Argentina</h3>
-            <p className="text-xl font-light">{hora}</p>
+            <h3 className="text-xl 2xl:text-2xl">Buenos Aires, Argentina</h3>
+            <p className="text-lg 2xl:text-xl font-light">{hora}</p>
           </div>
-          <div className="flex flex-row justify-between text-2xl mr-28">
+          <div className="flex flex-row justify-between text-xl 2xl:text-2xl mr-28">
             <div>
               <p>Send me an email</p>
-              <p className="font-light text-xl">ramiirv26@gmail.com</p>
+              <p className="font-light text-lg 2xl:text-xl">
+                ramiirv26@gmail.com
+              </p>
             </div>
             <div>
               <p>Or if you prefer to chat</p>
-              <p className="font-light text-xl">+54 9 11 4146 1834</p>
+              <p className="font-light text-lg 2xl:text-xl">
+                +54 9 11 4146 1834
+              </p>
             </div>
           </div>
         </section>
