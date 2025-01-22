@@ -101,7 +101,15 @@ function AppContent() {
       />
 
       {/* Ruta específica: Solo muestra el componente detalle */}
-      <Route path="/elfortin" element={<ElFortinDetail />} />
+      <Route
+        path="/elfortin"
+        element={
+          <>
+            <ElFortinDetail />
+            <ElFortinDetail2 />
+          </>
+        }
+      />
     </Routes>
   );
 }
