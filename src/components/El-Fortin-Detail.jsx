@@ -26,15 +26,6 @@ function ElFortinDetail() {
           </div>
           <div className="flex flex-row">
             <div className="space-y-1 w-1/2">
-              <h2 className="text-xl font-bold">Caracteristicas principales</h2>
-              <ul className="text-lg">
-                <li>Diseño y desarrollo de un sitio web</li>
-                <li>Exhibir proyectos realizados</li>
-                <li>Facilitar el contacto con potenciales clientes</li>
-                <li>Presentar la empresa</li>
-              </ul>
-            </div>
-            <div className="space-y-1 w-1/2">
               <h2 className="text-xl font-bold">Tecnologias usadas</h2>
               <ul className="text-lg">
                 <li>ReactJS</li>
