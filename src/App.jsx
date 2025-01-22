@@ -73,6 +73,9 @@ function AppContent() {
 
     window.addEventListener("wheel", handleScroll, { passive: false });
 
+    // Forzar el scroll al inicio al cambiar de ruta
+    gsap.to(window, { scrollTo: 0, duration: 0 });
+
     return () => {
       window.removeEventListener("wheel", handleScroll);
     };
