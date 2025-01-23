@@ -1,12 +1,59 @@
 import React from "react";
-
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/bundle";
 function ElFortinDetail() {
+  const images = [
+    "https://placehold.co/100x100",
+    "https://placehold.co/100x100",
+    "https://placehold.co/100x100",
+  ];
+
   return (
-    <div className="section contact-bg h-screen flex flex-col items-center">
-      <section className="border border-slate-800 m-8 h-2/4 w-3/4 flex items-center justify-center">
-        <p className="text-4xl">IMAGE</p>
+    <div className="section contact-bg h-screen flex flex-col items-center justify-center">
+      <section className=" bg-[#dddddd] h-2/4 w-3/4 flex items-center justify-center">
+        <Swiper
+          modules={[Navigation, Pagination, A11y]}
+          slidesPerView={1}
+          navigation
+          pagination
+          className="h-full"
+          style={{
+            "--swiper-pagination-color": "#000000",
+            "--swiper-navigation-color": "#000000",
+          }}
+        >
+          <SwiperSlide>
+            <img
+              src="src/assets/elfortin1.png"
+              alt="Imagen 1"
+              className="object-contain w-full h-full"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="src/assets/elfortin2.png"
+              alt="Imagen 1"
+              className="object-contain w-full h-full"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="src/assets/elfortin3.png"
+              alt="Imagen 1"
+              className="object-contain w-full h-full"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="src/assets/elfortin4.png"
+              alt="Imagen 1"
+              className="object-contain w-full h-full"
+            />
+          </SwiperSlide>
+        </Swiper>
       </section>
-      <section className="border border-slate-800 h-96 w-3/4 flex flex-row">
+      <section className=" h-96 w-3/4 flex flex-row">
         <div className="border border-slate-800 m-6 w-1/4">
           <h1 className="text-7xl font-bold">El Fortin</h1>
           <h2 className="text-2xl mt-3">
