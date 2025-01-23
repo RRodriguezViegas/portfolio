@@ -3,7 +3,7 @@ import React from "react";
 function ElFortinDetail2() {
   return (
     <div className="section contact-bg h-screen flex flex-col items-center">
-      <div className="space-y-1 w-1/2 m-8 border border-slate-800">
+      <div className="space-y-1 w-3/4 m-8 border border-slate-800">
         <h2 className="text-xl font-bold">Caracteristicas principales</h2>
         <ul className="text-lg">
           <li>Diseño y desarrollo de un sitio web</li>
