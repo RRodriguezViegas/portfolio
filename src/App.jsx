@@ -31,7 +31,7 @@ function AppContent() {
 
     // Detectar el scroll
     const handleScroll = e => {
-      e.preventDefault(); // Evita ese mini scroll molesto, redundante por el overflow hidden
+      // e.preventDefault(); // Evita ese mini scroll molesto, redundante por el overflow hidden
       if (isScrolling) return;
       isScrolling = true;
 
