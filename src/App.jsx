@@ -105,7 +105,6 @@ function AppContent() {
         element={
           <>
             <ElFortinDetail />
-            <ElFortinDetail2 />
           </>
         }
       />
