@@ -45,8 +45,8 @@ function AppContent() {
         if (currentSection < sections.length - 1) {
           gsap.to(window, {
             scrollTo: sections[currentSection + 1],
-            duration: 0.5,
-            ease: "power2.out",
+            duration: 2,
+            ease: "power3.inOut",
             onComplete: () => {
               isScrolling = false;
             },
@@ -59,8 +59,8 @@ function AppContent() {
         if (currentSection > 0) {
           gsap.to(window, {
             scrollTo: sections[currentSection - 1],
-            duration: 0.5,
-            ease: "power2.out",
+            duration: 2,
+            ease: "power3.inOut",
             onComplete: () => {
               isScrolling = false;
             },
