@@ -13,7 +13,6 @@ import Separador from "./components/Separador.jsx";
 import SeparadorPC from "./components/SeparadorPC.jsx";
 import SeparadorFinal from "./components/Separador-final.jsx";
 import ElFortinDetail from "./components/El-Fortin-Detail.jsx";
-import ElFortinDetail2 from "./components/El-Fortin-Detail copy.jsx";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
