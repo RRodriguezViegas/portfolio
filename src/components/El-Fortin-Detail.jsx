@@ -46,7 +46,7 @@ function ElFortinDetail() {
   return (
     <div className="bg-appear fonts bg-[#ffffff] h-full w-full text-[#000000] contact-bg flex flex-col justify-center">
       <section className="w-full md:w-3/4 self-center">
-        <div className="appear mt-24 md:mt-32 mx-2 md:mx-0">
+        <div className="appear mt-24 md:mt-32 mx-4 md:mx-0">
           <h1 className="text-6xl 2xl:text-9xl font-bold fortin ">EL FORTIN</h1>
           <p className="text-lg xl:text-2xl mt-3 opacity-70">
             Proyecto de sitio web con blog para empresa de alambrados rurales
@@ -55,7 +55,7 @@ function ElFortinDetail() {
       </section>
 
       <section className="appear my-2 lg:my-6 flex items-center justify-center">
-        <div className="w-full md:w-3/4 mx-2 md:mx-0 h-1/6 self-center">
+        <div className="w-full md:w-3/4 mx-4 md:mx-0 h-1/6 self-center">
           <img
             src="elfortin-files/elfortin-mockup.png"
             alt="what"
@@ -65,7 +65,7 @@ function ElFortinDetail() {
       </section>
 
       <section className="appear-at-scroll flex justify-center my-2 lg:my-6">
-        <div className="bg-[#0000000d] rounded-xl p-2 md:p-10 flex flex-col md:grid md:grid-cols-2 gap-y-4 lg:gap-y-20 w-full md:w-3/4 h-full mx-2 md:mx-0 text-sm lg:text-lg">
+        <div className="bg-[#0000000d] rounded-xl p-2 md:p-10 flex flex-col md:grid md:grid-cols-2 gap-y-4 lg:gap-y-20 w-full md:w-3/4 h-full mx-4 md:mx-0 text-sm lg:text-lg">
           <div className="space-y-4">
             <p className="opacity-50">Cliente</p>
             <div className="flex flex-col items-start justify-center space-y-7">
@@ -133,7 +133,7 @@ function ElFortinDetail() {
       </section>
 
       <section className="appear-at-scroll my-6 lg:my-12 flex items-center justify-center">
-        <div className="w-full md:w-3/4 mx-2 md:mx-0 h-1/6 self-center">
+        <div className="w-full md:w-3/4 mx-4 md:mx-0 h-1/6 self-center">
           <img
             src="elfortin-files/elfortin-mockup-phone.png"
             alt="what"
@@ -143,8 +143,8 @@ function ElFortinDetail() {
       </section>
 
       <section className="appear-at-scroll flex w-full md:w-3/4 my-6 lg:my-12 self-center">
-        <div className="flex flex-col items-center mx-2 sm:mx-8 md:mx-0 space-y-6 pr-6">
-          <div className="w-full 2xl:w-4/6 mx-2 sm:mx-8 md:mx-0 h-1/2 space-y-6">
+        <div className="flex flex-col items-center mx-4 sm:mx-8 md:mx-0 space-y-6 pr-6">
+          <div className="w-full 2xl:w-4/6 mx-4 sm:mx-8 md:mx-0 h-1/2 space-y-6">
             <h2 className="text-4xl md:text-5xl xl:text-6xl font-bold">
               Sistema de publicaciones
             </h2>
@@ -171,7 +171,7 @@ function ElFortinDetail() {
         </div>
       </section>
 
-      <section className="appear-at-scroll mx-2 md:mx-0 my-6 lg:my-12 flex flex-col items-center space-y-4">
+      <section className="appear-at-scroll mx-4 md:mx-0 my-6 lg:my-12 flex flex-col items-center space-y-4">
         <div className="w-full md:w-3/4 space-y-4">
           <video
             src="elfortin-files/elfortin-publicaciones-cc.mov"
@@ -230,8 +230,8 @@ function ElFortinDetail() {
       </section>
 
       <section className="appear-at-scroll flex w-full md:w-3/4 my-6 lg:my-12 self-center">
-        <div className="flex flex-col items-center mx-2 sm:mx-8 md:mx-0 space-y-6 pr-6">
-          <div className="w-full 2xl:w-4/6 mx-2 sm:mx-8 md:mx-0 h-1/2 space-y-6">
+        <div className="flex flex-col items-center mx-4 sm:mx-8 md:mx-0 space-y-6 pr-6">
+          <div className="w-full 2xl:w-4/6 mx-4 sm:mx-8 md:mx-0 h-1/2 space-y-6">
             <h2 className="text-4xl md:text-6xl font-bold">Diseño</h2>
             <p className="text-lg md:text-2xl text-[#000000e1]">
               El diseño de la web se basa en elecciones visuales sencillas y
@@ -249,7 +249,7 @@ function ElFortinDetail() {
       </section>
 
       <section className="appear-at-scroll flex flex-col space-y-4 w-full md:w-3/4 my-6 lg:my-12 self-center">
-        <div className="flex md:space-x-4 justify-center mx-2 md:mx-0">
+        <div className="flex md:space-x-4 justify-center mx-4 md:mx-0">
           <img
             src="elfortin-files/elfortin-palette.svg"
             alt=""
