@@ -1,7 +1,7 @@
 import React from "react";
 
 function Separador() {
-  return <div className="separador h-96">.</div>;
+  return <div className="h-60">.</div>;
 }
 
 export default Separador;
