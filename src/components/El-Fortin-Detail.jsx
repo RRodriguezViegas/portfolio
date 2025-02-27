@@ -148,7 +148,7 @@ function ElFortinDetail() {
             <h2 className="text-4xl md:text-5xl xl:text-6xl font-bold">
               Sistema de publicaciones
             </h2>
-            <p className="text-lg md:text-2xl text-[#000000c7]">
+            <p className="text-lg md:text-2xl text-[#000000e1]">
               Los administradores pueden{" "}
               <span className="font-semibold">subir imágenes</span> y
               descripciones de proyectos realizados a través de un{" "}
@@ -160,7 +160,7 @@ function ElFortinDetail() {
               actualizado con los últimos proyectos, brindando una mejor
               presentación de sus servicios a los clientes potenciales.
             </p>
-            <p className="text-lg md:text-2xl text-[#000000c7]">
+            <p className="text-lg md:text-2xl text-[#000000e1]">
               Además, las publicaciones pueden mantenerse en estado de borrador,
               permitiendo a los administradores prepararlas con anticipación y
               publicarlas cuando sea necesario. También pueden despublicar una
@@ -178,6 +178,7 @@ function ElFortinDetail() {
             autoPlay
             loop
             muted
+            playsinline
             className="rounded-md"
           />
           <img
@@ -199,7 +200,7 @@ function ElFortinDetail() {
             <h2 className="text-4xl md:text-6xl font-bold">
               Gestion de consultas
             </h2>
-            <p className="text-lg md:text-2xl text-[#000000c7]">
+            <p className="text-lg md:text-2xl text-[#000000e1]">
               El sistema de consultas permite a los usuarios{" "}
               <span className="font-semibold">enviar preguntas</span> o
               solicitudes a través de un formulario simple, donde deben
@@ -222,6 +223,7 @@ function ElFortinDetail() {
             autoPlay
             loop
             muted
+            playsinline
             className="rounded-md"
           />
         </div>
@@ -231,7 +233,7 @@ function ElFortinDetail() {
         <div className="flex flex-col items-center mx-2 sm:mx-8 md:mx-0 space-y-6 pr-6">
           <div className="w-full 2xl:w-4/6 mx-2 sm:mx-8 md:mx-0 h-1/2 space-y-6">
             <h2 className="text-4xl md:text-6xl font-bold">Diseño</h2>
-            <p className="text-lg md:text-2xl text-[#000000c7]">
+            <p className="text-lg md:text-2xl text-[#000000e1]">
               El diseño de la web se basa en elecciones visuales sencillas y
               directas, buscando facilitar la navegación. Los colores fueron
               seleccionados de acuerdo con las preferencias del cliente,
