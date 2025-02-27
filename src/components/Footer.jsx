@@ -1,7 +1,11 @@
 import React from "react";
 import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollToPlugin);
 
 function Footer({ sections }) {
@@ -13,24 +17,48 @@ function Footer({ sections }) {
     });
   };
 
+  useGSAP(() => {
+    gsap.to(".ft-appear", {
+      scrollTrigger: {
+        trigger: ".ft-appear",
+        toggleActions: "restart pause resume pause",
+      },
+      x: -128,
+      ease: "power4.out",
+      duration: 1,
+      stagger: 0.2,
+    });
+    gsap.from(".ft-appear", {
+      scrollTrigger: {
+        trigger: ".ft-appear",
+        toggleActions: "restart pause resume pause",
+      },
+      opacity: 0,
+      duration: 1,
+      stagger: 0.2,
+    });
+  });
+
   const currentYear = new Date().getFullYear();
 
   return (
     <>
       <div className="footer section h-screen flex flex-col justify-center">
         <section className="border-b-2 border-[#EAD6C9] h-2/4 w-3/4 self-center">
-          <h1 className="text-4xl font-bold text-[#EAD6C9]">Info & links</h1>
-          <div className="text-2xl font-light text-[#EAD6C9] space-y-4 pt-4">
-            <p>ramiirv26@gmail.com</p>
-            <p>+54 9 11 4146-1834</p>
+          <h1 className="ft-appear ml-32 text-4xl font-bold text-[#EAD6C9]">
+            Info & links
+          </h1>
+          <div className="text-2xl ml-32 font-light text-[#EAD6C9] space-y-4 pt-4">
+            <p className="ft-appear">ramiirv26@gmail.com</p>
+            <p className="ft-appear">+54 9 11 4146-1834</p>
             <a
-              className="block underline"
+              className="ft-appear block underline"
               href="RamaRodriguezViegas.pdf"
               download
             >
               Download CV
             </a>
-            <button className="underline" onClick={handleBackToTop}>
+            <button className="ft-appear <underline" onClick={handleBackToTop}>
               Back to top
             </button>
           </div>
