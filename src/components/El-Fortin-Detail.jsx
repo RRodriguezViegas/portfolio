@@ -67,7 +67,7 @@ function ElFortinDetail() {
       <section className="appear-at-scroll flex justify-center my-2 lg:my-6">
         <div className="bg-[#0000000d] rounded-xl p-2 md:p-10 flex flex-col md:grid md:grid-cols-2 gap-y-8 lg:gap-y-20 w-full md:w-3/4 h-full mx-4 md:mx-0 text-sm lg:text-lg">
           <div className="space-y-4">
-            <p className="opacity-50">Cliente</p>
+            <p className="opacity-50 text-lg">Cliente</p>
             <div className="flex flex-col items-start justify-center space-y-7">
               <span className="text-6xl xl:text-7xl font-bold fortin">
                 EL FORTIN
@@ -95,8 +95,8 @@ function ElFortinDetail() {
             </div>
           </div>
           <div className="space-y-4">
-            <p className="opacity-50 text-base">Descripción</p>
-            <p>
+            <p className="opacity-50 text-lg">Descripción</p>
+            <p className="text-base">
               Diseñé y desarrollé un sitio web completo para Alambrados El
               Fortín, una empresa dedicada a la instalación de alambrados
               rurales. El objetivo principal era presentar la empresa, exhibir
@@ -105,8 +105,8 @@ function ElFortinDetail() {
             </p>
           </div>
           <div className="space-y-2">
-            <p className="opacity-50">Servicios</p>
-            <p>
+            <p className="opacity-50 text-lg">Servicios</p>
+            <p className="text-base">
               — Desarrollo web <br />
               — Diseño web <br />
               — Funcionalidad de blog <br />
@@ -115,9 +115,9 @@ function ElFortinDetail() {
             </p>
           </div>
           <div className="space-y-4">
-            <p className="opacity-50">Tecnologías</p>
+            <p className="opacity-50 text-lg">Tecnologías</p>
             <div>
-              <ul className="grid grid-cols-3 gap-4 text-center">
+              <ul className="grid grid-cols-3 gap-4 text-center text-base">
                 <li className="bg-[#00000011] rounded-full">React</li>
                 <li className="bg-[#00000011] rounded-full">Node</li>
                 <li className="bg-[#00000011] rounded-full">Express</li>
