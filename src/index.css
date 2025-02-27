@@ -146,3 +146,27 @@ body {
   display: block;
   /* El fondo se muestra al hacer hover */
 }
+
+/* *Barra de scroll custom */
+
+/* Estilizar la barra completa */
+/* ::-webkit-scrollbar { */
+  /* width: 8px; Ancho de la barra */
+/* } */
+
+/* Track (fondo de la barra) */
+/* ::-webkit-scrollbar-track { */
+  /* background: #3f2240; */
+  /* border-radius: 4px; */
+/* } */
+
+/* Thumb (la parte que se mueve) */
+/* ::-webkit-scrollbar-thumb { */
+  /* background: #201221; */
+  /* border-radius: 4px; */
+/* } */
+
+/* Al pasar el mouse */
+/* ::-webkit-scrollbar-thumb:hover { */
+  /* background: #1d101e; */
+/* } */
