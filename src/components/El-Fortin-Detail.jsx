@@ -57,7 +57,7 @@ function ElFortinDetail() {
       <section className="appear my-2 lg:my-6 flex items-center justify-center">
         <div className="w-full md:w-3/4 mx-2 md:mx-0 h-1/6 self-center">
           <img
-            src="src/assets/elfortin-mockup.png"
+            src="portfolio/src/assets/elfortin-mockup.png"
             alt="what"
             className="object-contain w-full h-full rounded-md"
           />
