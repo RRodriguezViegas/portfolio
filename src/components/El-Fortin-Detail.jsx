@@ -135,7 +135,7 @@ function ElFortinDetail() {
       <section className="appear-at-scroll my-6 lg:my-12 flex items-center justify-center">
         <div className="w-full md:w-3/4 mx-2 md:mx-0 h-1/6 self-center">
           <img
-            src="src/assets/elfortin-mockup-phone.png"
+            src="elfortin-files/elfortin-mockup-phone.png"
             alt="what"
             className="object-contain w-full h-full rounded-md"
           />
@@ -174,19 +174,19 @@ function ElFortinDetail() {
       <section className="appear-at-scroll mx-2 md:mx-0 my-6 lg:my-12 flex flex-col items-center space-y-4">
         <div className="w-full md:w-3/4 space-y-4">
           <video
-            src="src/assets/elfortin-publicaciones-cc.mov"
+            src="elfortin-files/elfortin-publicaciones-cc.mov"
             autoPlay
             loop
             muted
             className="rounded-md"
           />
           <img
-            src="src/assets/elfortin-publicaciones-1.svg"
+            src="elfortin-files/elfortin-publicaciones-1.svg"
             alt=""
             className="rounded-md"
           />
           <img
-            src="src/assets/elfortin-publicaciones-2.svg"
+            src="elfortin-files/elfortin-publicaciones-2.svg"
             alt=""
             className="rounded-md"
           />
@@ -218,7 +218,7 @@ function ElFortinDetail() {
       <section className="appear-at-scroll my-6 lg:my-12 flex items-center justify-center">
         <div className="w-full mx-2 md:mx-0 md:w-3/4 h-1/6 self-center">
           <video
-            src="src/assets/elfortin-consultas-cc.mov"
+            src="elfortin-files/elfortin-consultas-cc.mov"
             autoPlay
             loop
             muted
@@ -248,16 +248,24 @@ function ElFortinDetail() {
 
       <section className="appear-at-scroll flex flex-col space-y-4 w-full md:w-3/4 my-6 lg:my-12 self-center">
         <div className="flex md:space-x-4 justify-center mx-2 md:mx-0">
-          <img src="src/assets/elfortin-palette.svg" alt="" className="w-1/2" />
-          <img src="src/assets/elfortin-icons.png" alt="" className="w-1/2" />
+          <img
+            src="elfortin-files/elfortin-palette.svg"
+            alt=""
+            className="w-1/2"
+          />
+          <img
+            src="elfortin-files/elfortin-icons.png"
+            alt=""
+            className="w-1/2"
+          />
         </div>
         <img
-          src="src/assets/elfortin-diseno-1.svg"
+          src="elfortin-files/elfortin-diseno-1.svg"
           alt=""
           className="rounded-md mx-2 md:mx-0"
         />
         <img
-          src="src/assets/elfortin-diseno-2.svg"
+          src="elfortin-files/elfortin-diseno-2.svg"
           alt=""
           className="rounded-md mx-2 md:mx-0"
         />

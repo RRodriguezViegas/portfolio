@@ -16,12 +16,12 @@ function Projects() {
         <Link to={"/elfortin"}>
           <div className="relative w-60 h-60 rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
             <div
-              className="absolute w-full h-full flex justify-center items-center bg-[url('src/assets/el-fortin-bg.jpg')] bg-cover bg-no-repeat blur-sm"
+              className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/el-fortin-bg.jpg')] bg-cover bg-no-repeat blur-sm"
               style={{ willChange: "filter, transform" }}
             />
             <img
               className="relative w-1/2 h-1/2 rounded-sm shadow-xl"
-              src="src\assets\el-fortin-logo.png"
+              src="projects-files\el-fortin-logo.png"
               alt="Logo El Fortin"
             />
           </div>
@@ -30,12 +30,12 @@ function Projects() {
         <button>
           <div className="relative w-60 h-60 rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
             <div
-              className="absolute w-full h-full flex justify-center items-center bg-[url('src/assets/woofer-bg.png')] bg-contain blur-sm"
+              className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/woofer-bg.png')] bg-contain blur-sm"
               style={{ willChange: "filter, transform" }}
             />
             <img
               className="relative w-1/2 h-1/2 rounded-sm"
-              src="src/assets/woofer-logo.png"
+              src="projects-files/woofer-logo.png"
               alt="Logo Woofer"
             />
           </div>
@@ -44,12 +44,12 @@ function Projects() {
         <button>
           <div className="relative w-60 h-60 rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
             <div
-              className="absolute w-full h-full flex justify-center items-center bg-[url('src/assets/drivers-bg.jpg')] bg-contain blur-sm"
+              className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/drivers-bg.jpg')] bg-contain blur-sm"
               style={{ willChange: "filter, transform" }}
             />
             <img
               className="relative w-1/2 h-1/2 rounded-sm"
-              src="src/assets/drivers-logo.png"
+              src="projects-files/drivers-logo.png"
               alt="Logo Drivers"
             />
           </div>
@@ -58,7 +58,7 @@ function Projects() {
         <button>
           <div className="relative w-60 h-60 rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
             <div
-              className="absolute w-full h-full flex justify-center items-center bg-[url('src/assets/rama-portfolio-bg.png')] bg-contain blur-sm"
+              className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/rama-portfolio-bg.png')] bg-contain blur-sm"
               style={{ willChange: "filter, transform" }}
             />
             <div className="relative w-1/2 h-1/2 rounded-sm">
