@@ -8,6 +8,13 @@ gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(useGSAP);
 
 function Home({ sections }) {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   useGSAP(() => {
     gsap.to(".appear", {
       y: -25,
