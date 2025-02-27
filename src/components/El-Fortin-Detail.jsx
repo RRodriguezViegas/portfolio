@@ -48,7 +48,7 @@ function ElFortinDetail() {
       <section className="w-full md:w-3/4 self-center">
         <div className="appear mt-24 md:mt-32 mx-2 md:mx-0">
           <h1 className="text-6xl 2xl:text-9xl font-bold fortin ">EL FORTIN</h1>
-          <p className="text-lgxl:text-2xl mt-3 opacity-70">
+          <p className="text-lg xl:text-2xl mt-3 opacity-70">
             Proyecto de sitio web con blog para empresa de alambrados rurales
           </p>
         </div>
