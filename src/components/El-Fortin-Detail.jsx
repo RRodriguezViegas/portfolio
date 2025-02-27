@@ -195,8 +195,8 @@ function ElFortinDetail() {
       </section>
 
       <section className="appear-at-scroll flex w-full md:w-3/4 my-6 lg:my-12 self-center">
-        <div className="flex flex-col items-center mx-2 sm:mx-8 md:mx-0 space-y-6 pr-6">
-          <div className="w-full 2xl:w-4/6 mx-2 sm:mx-8 md:mx-0 h-1/2 space-y-6">
+        <div className="flex flex-col items-center mx-4 sm:mx-8 md:mx-0 space-y-6 pr-6">
+          <div className="w-full 2xl:w-4/6 mx-4 sm:mx-8 md:mx-0 h-1/2 space-y-6">
             <h2 className="text-4xl md:text-6xl font-bold">
               Gestion de consultas
             </h2>
@@ -217,7 +217,7 @@ function ElFortinDetail() {
       </section>
 
       <section className="appear-at-scroll my-6 lg:my-12 flex items-center justify-center">
-        <div className="w-full mx-2 md:mx-0 md:w-3/4 h-1/6 self-center">
+        <div className="w-full mx-4 md:mx-0 md:w-3/4 h-1/6 self-center">
           <video
             src="elfortin-files/elfortin-consultas-cc.mov"
             autoPlay
