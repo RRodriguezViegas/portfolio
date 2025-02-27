@@ -96,7 +96,38 @@ function Home({ sections }) {
 
     gsap.to(".rama", {
       text: "Rama",
-      duration: 1.3,
+      duration: 2.3,
+      ease: "power4.out",
+      delay: 0.6,
+    });
+
+    gsap.to(".parallax-blob-rot-1", {
+      rotateZ: 360,
+      duration: 50,
+      ease: "power1.inOut",
+      repeat: -1,
+      yoyo: true,
+    });
+
+    gsap.to(".parallax-blob-rot-2", {
+      rotateZ: 360,
+      duration: 30,
+      ease: "power1.inOut",
+      repeat: -1,
+      yoyo: true,
+    });
+
+    gsap.to(".parallax-blob-2", {
+      y: 20,
+      x: 80,
+      rotateZ: -45,
+      duration: 30,
+      ease: "power1.inOut",
+      repeat: -1,
+      yoyo: true,
+    });
+
+    gsap.from(".bg-appear", {
       ease: "power4.out",
       delay: 0.3,
     });
