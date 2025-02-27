@@ -65,7 +65,7 @@ function ElFortinDetail() {
       </section>
 
       <section className="appear-at-scroll flex justify-center my-2 lg:my-6">
-        <div className="bg-[#0000000d] rounded-xl p-2 md:p-10 flex flex-col md:grid md:grid-cols-2 gap-y-4 lg:gap-y-20 w-full md:w-3/4 h-full mx-4 md:mx-0 text-sm lg:text-lg">
+        <div className="bg-[#0000000d] rounded-xl p-2 md:p-10 flex flex-col md:grid md:grid-cols-2 gap-y-8 lg:gap-y-20 w-full md:w-3/4 h-full mx-4 md:mx-0 text-sm lg:text-lg">
           <div className="space-y-4">
             <p className="opacity-50">Cliente</p>
             <div className="flex flex-col items-start justify-center space-y-7">
@@ -95,7 +95,7 @@ function ElFortinDetail() {
             </div>
           </div>
           <div className="space-y-4">
-            <p className="opacity-50">Descripción</p>
+            <p className="opacity-50 text-base">Descripción</p>
             <p>
               Diseñé y desarrollé un sitio web completo para Alambrados El
               Fortín, una empresa dedicada a la instalación de alambrados
