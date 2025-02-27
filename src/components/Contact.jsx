@@ -88,11 +88,23 @@ function Contact() {
 
   return (
     <div className="about-bg z-0 relative section h-screen flex items-center justify-center text-[#242038]">
-      <div className="parallax-circle -left-40 -bottom-40 absolute -z-10 rounded-full w-96 h-96 bg-[#ff61dd57] blur-md" />
-      <div className="parallax-pill left-3/4 absolute -z-10 rounded-full w-96 h-40 rotate-12 bg-[#ff61dd57] blur-md" />
-      <div className="parallax-oval left-1/4 top-8 absolute -z-10 rounded-full w-48 h-60 rotate-12 bg-[#ff61dd57] blur-md" />
+      <div
+        className="parallax-circle -left-40 -bottom-40 absolute -z-10 rounded-full w-96 h-96 bg-[#ff61dd57] blur-md"
+        style={{ willChange: "filter, transform" }}
+      />
+      <div
+        className="parallax-pill left-3/4 absolute -z-10 rounded-full w-96 h-40 rotate-12 bg-[#ff61dd57] blur-md"
+        style={{ willChange: "filter, transform" }}
+      />
+      <div
+        className="parallax-oval left-1/4 top-8 absolute -z-10 rounded-full w-48 h-60 rotate-12 bg-[#ff61dd57] blur-md"
+        style={{ willChange: "filter, transform" }}
+      />
 
-      <div className="w-3/4 h-5/6 lg:h-3/6 flex flex-col lg:flex-row  bg-[#ffd4b82d] rounded-xl border border-slate-800 p-2 backdrop-blur-md">
+      <div
+        className="ct-appear w-3/4 h-5/6 lg:h-3/6 flex flex-col lg:flex-row  bg-[#ffd4b82d] rounded-xlp-2 backdrop-blur-md"
+        style={{ willChange: "filter, transform" }}
+      >
         <section className="w-full lg:w-1/2 h-3/4 flex flex-col justify-between">
           <div>
             <h1 className="MuseoModerno text-7xl pb-5">Let's collaborate</h1>
