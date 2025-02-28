@@ -107,19 +107,19 @@ function Contact() {
       >
         <section className="w-full lg:w-1/2 h-3/4 flex flex-col justify-between">
           <div>
-            <h1 className="MuseoModerno text-7xl pb-5">Let's collaborate</h1>
+            <h1 className="MuseoModerno text-7xl pb-5">Contacto</h1>
             <h3 className="text-xl 2xl:text-2xl">Buenos Aires, Argentina</h3>
             <p className="text-lg 2xl:text-xl font-light">{hora}</p>
           </div>
           <div className="flex flex-row justify-between text-xl 2xl:text-2xl mr-28">
             <div>
-              <p>Send me an email</p>
+              <p>Enviame un mail</p>
               <p className="font-light text-lg 2xl:text-xl">
-                ramiirv26@gmail.com
+                ramirorvdev@gmail.com
               </p>
             </div>
             <div>
-              <p>Or if you prefer to chat</p>
+              <p>O si preferis charlar</p>
               <p className="font-light text-lg 2xl:text-xl">
                 +54 9 11 4146 1834
               </p>
@@ -127,45 +127,45 @@ function Contact() {
           </div>
         </section>
         <section className="w-1/2 h-3/4  flex flex-col justify-between">
-          <h1 className="text-2xl pb-4">Say hello</h1>
+          <h1 className="text-2xl pb-4">no lo sé</h1>
           <form onSubmit={sendEmail} ref={form}>
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label htmlFor="name" className="text-md">
-                  NAME
+                  NOMBRE
                 </label>
                 <br />
                 <input
                   type="text"
                   name="name"
                   className="text-lg w-full bg-transparent border-b-2 border-transparent focus:outline-none focus:border-gray-800 placeholder-[#2420387a] focus:placeholder-transparent transition-all duration-300"
-                  placeholder="Your name"
+                  placeholder="Tu nombre"
                   required
                 />
               </div>
               <div>
                 <label htmlFor="name" className="text-md">
-                  SUBJECT
+                  ASUNTO
                 </label>
                 <br />
                 <input
                   type="text"
                   name="subject"
                   className="text-lg w-full bg-transparent border-b-2 border-transparent focus:outline-none focus:border-gray-800 placeholder-[#2420387a] focus:placeholder-transparent transition-all duration-300"
-                  placeholder="Choose subject"
+                  placeholder="Motivo de consulta"
                   required
                 />
               </div>
               <div>
                 <label htmlFor="name" className="text-md">
-                  COMPANY
+                  EMPRESA
                 </label>
                 <br />
                 <input
                   type="text"
                   name="company"
                   className="text-lg w-full bg-transparent border-b-2 border-transparent focus:outline-none focus:border-gray-800 placeholder-[#2420387a] focus:placeholder-transparent transition-all duration-300"
-                  placeholder="Your company"
+                  placeholder="Tu empresa"
                 />
               </div>
               <div>
@@ -177,20 +177,20 @@ function Contact() {
                   type="email"
                   name="user_email"
                   className="text-lg w-full bg-transparent border-b-2 border-transparent focus:outline-none focus:border-gray-800 placeholder-[#2420387a] focus:placeholder-transparent transition-all duration-300"
-                  placeholder="Email address"
+                  placeholder="Tu correo electrónico"
                   required
                 />
               </div>
               <div>
                 <label htmlFor="name" className="text-md">
-                  MESSAGE
+                  MENSAJE
                 </label>
                 <br />
                 <textarea
                   type="text"
                   name="message"
                   className="text-lg w-full bg-transparent border border-transparent focus:outline-none focus:border-[#242038] placeholder-[#2420387a] focus:placeholder-transparent transition-all duration-300"
-                  placeholder="Start typing here"
+                  placeholder="Escribí acá"
                   required
                 />
               </div>
@@ -199,7 +199,7 @@ function Contact() {
               type="submit"
               className="underline text-xl inline-block self-start"
             >
-              Submit &rarr;
+              Enviar &rarr;
             </button>
           </form>
         </section>
