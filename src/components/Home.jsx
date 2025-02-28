@@ -138,7 +138,18 @@ function Home({ sections }) {
   return (
     <>
       <div className="bg-appear home-bg section h-screen relative flex justify-center">
-        <div className="absolute w-1/2 h-screen left-0 flex flex-col justify-center bg-[#] blur-3xl">
+        <div className="absolute w-1/2 h-screen left-0 flex flex-col justify-center bg-[#ff5ff26e] blur-3xl">
+          <svg
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute left-96 top-60 blur-3xl"
+          >
+            <path
+              fill="#da1fbd81"
+              d="M27.8,-23.9C42,-4.4,63.5,7.5,61.5,13.1C59.5,18.7,33.9,18.1,13.7,27.4C-6.5,36.7,-21.4,56,-38.1,56.6C-54.8,57.2,-73.3,39.1,-74.1,21C-74.9,3,-58.1,-14.9,-42.8,-34.7C-27.5,-54.5,-13.7,-76.2,-3.5,-73.4C6.8,-70.7,13.6,-43.5,27.8,-23.9Z"
+              transform="translate(100 100)"
+            />
+          </svg>
           <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
