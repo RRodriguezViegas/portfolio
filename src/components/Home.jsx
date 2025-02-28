@@ -310,8 +310,8 @@ function Home({ sections }) {
               Transformo ideas 💡 en <br /> experiencias web funcionales ✨{" "}
               <br />y atractivas. 🔥
             </h2>
-            <p className="appear text-2xl underline text-[#242038]">
-              <a href="#">Let's create something amazing!</a>
+            <p className="z-50 appear text-2xl underline text-[#242038]">
+              <a href="#">Hagamos posible tu proyecto!</a>
             </p>
           </div>
         </div>
