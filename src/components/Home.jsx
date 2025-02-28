@@ -296,7 +296,6 @@ function Home({ sections }) {
         </div>
 
         <div className="w-3/4 pt-12 flex justify-between z-10">
-          {/* //! z-10 está causando problemas al seleccionar texto */}
           <h1 className="text-5xl text-[#242038]">&lt;Rama /&gt;</h1>
           <HamburgerMenu sections={sections} />
         </div>
