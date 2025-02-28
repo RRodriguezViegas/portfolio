@@ -306,10 +306,9 @@ function Home({ sections }) {
               Hey! I'm{" "}
               <span className="inline-block rama text-[#8332AC]"> #%@& </span>
             </h1>
-            <h2 className="mb-16 mt-6 appear text-5xl font-bold text-[#242038]">
-              I transform ideas into <br /> functional and visually stunning{" "}
-              <br />
-              web experiences.
+            <h2 className="z-50 mb-16 mt-6 appear text-5xl font-semibold text-[#242038]">
+              Transformo ideas 💡 en <br /> experiencias web funcionales ✨{" "}
+              <br />y atractivas. 🔥
             </h2>
             <p className="appear text-2xl underline text-[#242038]">
               <a href="#">Let's create something amazing!</a>
