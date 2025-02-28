@@ -46,7 +46,7 @@ function Footer({ sections }) {
       <div className="footer section h-screen flex flex-col justify-center">
         <section className="border-b-2 border-[#EAD6C9] h-2/4 w-3/4 self-center">
           <h1 className="ft-appear ml-32 text-4xl font-bold text-[#EAD6C9]">
-            Info & links
+            Información y links
           </h1>
           <div className="text-2xl ml-32 font-light text-[#EAD6C9] space-y-4 pt-4">
             <p className="ft-appear">ramiirv26@gmail.com</p>
@@ -56,15 +56,15 @@ function Footer({ sections }) {
               href="RamaRodriguezViegas.pdf"
               download
             >
-              Download CV
+              Descargar CV
             </a>
             <button className="ft-appear <underline" onClick={handleBackToTop}>
-              Back to top
+              Volver arriba
             </button>
           </div>
         </section>
         <section className="w-3/4 self-center flex justify-between pt-14 text-xl text-[#EAD6C9]">
-          <p>&copy; {currentYear} Rama. All rights reserved</p>
+          <p>&copy; {currentYear} Rama. Todos los derechos reservados</p>
           <div className="space-x-6">
             <a
               href="https://github.com/RRodriguezViegas"
