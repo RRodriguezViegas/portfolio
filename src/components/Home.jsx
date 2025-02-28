@@ -302,8 +302,8 @@ function Home({ sections }) {
         </div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center h-full">
           <div className="flex flex-col items-center">
-            <h1 className="appear text-2xl text-[#242038]">
-              Hey! I'm{" "}
+            <h1 className="z-50 appear text-3xl text-[#242038]">
+              Hola! Soy{" "}
               <span className="inline-block rama text-[#8332AC]"> #%@& </span>
             </h1>
             <h2 className="z-50 mb-16 mt-6 appear text-5xl font-semibold text-[#242038]">
