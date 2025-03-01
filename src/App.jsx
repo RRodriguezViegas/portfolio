@@ -22,64 +22,67 @@ gsap.registerPlugin(ScrollToPlugin);
 function AppContent() {
   const [sections, setSections] = useState([]);
   const location = useLocation();
+  const isDesktop = () => window.innerWidth > 1024;
 
-  useEffect(() => {
-    const sections = document.querySelectorAll(".section");
-    setSections(sections);
-    let isScrolling = false;
+  if (isDesktop()) {
+    useEffect(() => {
+      const sections = document.querySelectorAll(".section");
+      setSections(sections);
+      let isScrolling = false;
 
-    // Detectar el scroll
-    const handleScroll = e => {
-      // e.preventDefault(); // Evita ese mini scroll molesto, redundante por el overflow hidden
-      if (isScrolling) return;
-      isScrolling = true;
+      // Detectar el scroll
+      const handleScroll = e => {
+        // e.preventDefault(); // Evita ese mini scroll molesto, redundante por el overflow hidden
+        if (isScrolling) return;
+        isScrolling = true;
 
-      const currentSection = Array.from(sections).findIndex(
-        section =>
-          section.getBoundingClientRect().top <= window.innerHeight &&
-          section.getBoundingClientRect().bottom > 0
-      );
+        const currentSection = Array.from(sections).findIndex(
+          section =>
+            section.getBoundingClientRect().top <= window.innerHeight &&
+            section.getBoundingClientRect().bottom > 0
+        );
 
-      if (e.deltaY > 0) {
-        // Scrolling hacia abajo
-        if (currentSection < sections.length - 1) {
-          gsap.to(window, {
-            scrollTo: sections[currentSection + 1],
-            duration: 2,
-            ease: "power3.inOut",
-            onComplete: () => {
-              isScrolling = false;
-            },
-          });
+        if (e.deltaY > 0) {
+          // Scrolling hacia abajo
+          if (currentSection < sections.length - 1) {
+            gsap.to(window, {
+              scrollTo: sections[currentSection + 1],
+              duration: 2,
+              ease: "power3.inOut",
+              onComplete: () => {
+                isScrolling = false;
+              },
+            });
+          } else {
+            isScrolling = false;
+          }
         } else {
-          isScrolling = false;
+          // Scrolling hacia arriba
+          if (currentSection > 0) {
+            gsap.to(window, {
+              scrollTo: sections[currentSection - 1],
+              duration: 2,
+              ease: "power3.inOut",
+              onComplete: () => {
+                isScrolling = false;
+              },
+            });
+          } else {
+            isScrolling = false;
+          }
         }
-      } else {
-        // Scrolling hacia arriba
-        if (currentSection > 0) {
-          gsap.to(window, {
-            scrollTo: sections[currentSection - 1],
-            duration: 2,
-            ease: "power3.inOut",
-            onComplete: () => {
-              isScrolling = false;
-            },
-          });
-        } else {
-          isScrolling = false;
-        }
-      }
-    };
+      };
 
-    window.addEventListener("wheel", handleScroll, { passive: false });
+      window.addEventListener("wheel", handleScroll, { passive: false });
 
-    // Forzar el scroll al inicio al cambiar de ruta
-    gsap.to(window, { scrollTo: 0, duration: 0 });
+      // Forzar el scroll al inicio al cambiar de ruta
+      gsap.to(window, { scrollTo: 0, duration: 0 });
 
-    return () => {
-      window.removeEventListener("wheel", handleScroll);
-    };
-  }, [location.pathname]);
+      return () => {
+        window.removeEventListener("wheel", handleScroll);
+      };
+    }, [location.pathname]);
+  }
 
   return (
     <Routes>
