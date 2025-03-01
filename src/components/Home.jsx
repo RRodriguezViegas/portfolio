@@ -11,8 +11,13 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
 
 function Home({ sections }) {
+  const isDesktop = () => window.innerWidth > 1024;
+
   useEffect(() => {
-    document.body.style.overflow = "hidden";
+    if (isDesktop()) {
+      document.body.style.overflow = "hidden";
+    }
+
     return () => {
       document.body.style.overflow = "auto";
     };
