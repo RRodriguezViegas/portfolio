@@ -44,11 +44,11 @@ function Footer({ sections }) {
   return (
     <>
       <div className="footer section h-screen flex flex-col justify-center">
-        <section className="border-b-2 border-[#EAD6C9] h-2/4 m-2 sm:m-0 sm:w-3/4 self-center">
-          <h1 className="ft-appear text-4xl font-bold text-[#EAD6C9]">
+        <section className="border-b-2 border-[#e9e9e9] h-2/4 m-4 sm:m-0 sm:w-3/4 self-center">
+          <h1 className="ft-appear text-4xl font-bold text-[#e9e9e9]">
             Información y links
           </h1>
-          <div className="text-2xl font-light text-[#EAD6C9] space-y-4 pt-4">
+          <div className="text-2xl font-light text-[#e9e9e9] space-y-4 pt-4">
             <p className="ft-appear">ramiirv26@gmail.com</p>
             <p className="ft-appear">+54 9 11 4146-1834</p>
             <a
@@ -63,7 +63,7 @@ function Footer({ sections }) {
             </button>
           </div>
         </section>
-        <section className="m-2 sm:m-0 sm:w-3/4 self-center flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-between pt-14 text-xl text-[#EAD6C9]">
+        <section className="m-4 sm:m-0 sm:w-3/4 self-center flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-between pt-14 text-xl text-[#e9e9e9]">
           <p>&copy; {currentYear} Rama. Todos los derechos reservados</p>
           <div className="space-x-6">
             <a
@@ -72,7 +72,7 @@ function Footer({ sections }) {
               rel="noopener noreferrer"
             >
               <svg
-                className="inline fill-[#EAD6C9]"
+                className="inline fill-[#e9e9e9]"
                 width="30"
                 height="30"
                 role="img"
@@ -89,7 +89,7 @@ function Footer({ sections }) {
               rel="noopener noreferrer"
             >
               <svg
-                className="inline fill-[#EAD6C9]"
+                className="inline fill-[#e9e9e9]"
                 width="30"
                 height="30"
                 role="img"
@@ -102,7 +102,7 @@ function Footer({ sections }) {
             </a>
             <a href="#" target="_blank" rel="noopener noreferrer">
               <svg
-                className="inline fill-[#EAD6C9]"
+                className="inline fill-[#e9e9e9]"
                 width="32"
                 height="32"
                 role="img"
@@ -118,9 +118,13 @@ function Footer({ sections }) {
                 />
               </svg>
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/rama.devv?igsh=MWxvbWJmOW9id2owZw%3D%3D&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
-                className="inline fill-[#EAD6C9]"
+                className="inline fill-[#e9e9e9]"
                 width="32"
                 height="32"
                 role="img"
