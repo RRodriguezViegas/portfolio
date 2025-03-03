@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 function Projects() {
   return (
     <div className="about-bg pt-10 section h-screen flex flex-col items-center justify-center text-center">
-      <h1 className="pr-appear MuseoModerno text-7xl font-bold text-[#242038]">
+      <h1 className="pr-appear MuseoModerno text-3xl lg:text-7xl font-bold text-[#242038]">
         Algunos de mis proyectos
       </h1>
-      <p className="pr-appear text-2xl text-[#242038] p-4">
+      <p className="pr-appear text-xl lg:text-2xl text-[#242038] p-4">
         Una selección de proyectos que muestran mis habilidades como
         desarrollador
       </p>
 
-      <div className="pr-appear grid grid-cols-3 gap-5 m-8">
+      <div className="pr-appear grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-4 w-[80vw] max-w-[900px]">
         <Link to={"/elfortin"}>
-          <div className="relative w-60 h-60 rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
+          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
             <div
               className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/el-fortin-bg.jpg')] bg-cover bg-no-repeat blur-sm"
               style={{ willChange: "filter, transform" }}
@@ -27,8 +27,8 @@ function Projects() {
           </div>
         </Link>
 
-        <button>
-          <div className="relative w-60 h-60 rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
+        <Link>
+          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
             <div
               className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/woofer-bg.png')] bg-contain blur-sm"
               style={{ willChange: "filter, transform" }}
@@ -39,10 +39,10 @@ function Projects() {
               alt="Logo Woofer"
             />
           </div>
-        </button>
+        </Link>
 
-        <button>
-          <div className="relative w-60 h-60 rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
+        <Link>
+          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
             <div
               className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/drivers-bg.jpg')] bg-contain blur-sm"
               style={{ willChange: "filter, transform" }}
@@ -53,10 +53,10 @@ function Projects() {
               alt="Logo Drivers"
             />
           </div>
-        </button>
+        </Link>
 
-        <button>
-          <div className="relative w-60 h-60 rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
+        <Link>
+          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
             <div
               className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/rama-portfolio-bg.png')] bg-contain blur-sm"
               style={{ willChange: "filter, transform" }}
@@ -67,14 +67,14 @@ function Projects() {
               </span>
             </div>
           </div>
-        </button>
+        </Link>
 
         <div
-          className="bg-gray-400 w-60 h-60 rounded-sm blur-sm"
+          className="bg-gray-400 aspect-square rounded-sm blur-sm"
           style={{ willChange: "filter, transform" }}
         ></div>
         <div
-          className="bg-gray-400 w-60 h-60 rounded-sm blur-sm"
+          className="bg-gray-400 aspect-square rounded-sm blur-sm"
           style={{ willChange: "filter, transform" }}
         ></div>
       </div>
