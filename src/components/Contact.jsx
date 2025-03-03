@@ -88,7 +88,7 @@ function Contact() {
 
   return (
     <div className="about-bg z-0 relative section h-screen flex items-center justify-center text-[#242038]">
-      <div
+      {/* <div
         className="parallax-circle -left-40 -bottom-40 absolute -z-10 rounded-full w-96 h-96 bg-[#ff61dd57] blur-md"
         style={{ willChange: "filter, transform" }}
       />
