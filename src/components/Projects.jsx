@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Projects() {
   return (
-    <div className="about-bg pt-10 section h-screen flex flex-col items-center justify-center text-center">
+    <div className="about-bg pt-10 section h-full lg:h-screen flex flex-col items-center justify-center text-center">
       <h1 className="pr-appear MuseoModerno text-3xl lg:text-7xl font-bold text-[#242038]">
         Algunos de mis proyectos
       </h1>
