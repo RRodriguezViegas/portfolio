@@ -314,7 +314,7 @@ function Home({ sections }) {
               Hola! Soy{" "}
               <span className="inline-block rama text-[#3234ac]"> #%@& </span>
             </h1>
-            <h2 className="z-50 mb-16 mt-6 appear text-3xl lg:text-5xl font-semibold text-[#242038]">
+            <h2 className="z-50 mb-16 mt-6 mx-1 appear text-3xl lg:text-5xl font-semibold text-[#242038]">
               Transformo ideas 💡 en <br /> experiencias web funcionales ✨{" "}
               <br />y atractivas 🔥
             </h2>
