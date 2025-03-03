@@ -32,27 +32,29 @@ function Home({ sections }) {
     });
     gsap.from(".appear", { opacity: 0, duration: 1.2, stagger: 0.15 });
 
-    gsap.to(".pr-appear", {
-      scrollTrigger: {
-        trigger: ".pr-appear",
-        start: "top bottom",
-        toggleActions: "restart pause resume pause",
-      },
-      y: -25,
-      ease: "power4.out",
-      duration: 1.5,
-      stagger: 0.15,
-    });
-    gsap.from(".pr-appear", {
-      scrollTrigger: {
-        trigger: ".pr-appear",
-        start: "top bottom",
-        toggleActions: "restart pause resume pause",
-      },
-      opacity: 0,
-      duration: 1.2,
-      stagger: 0.15,
-    });
+    if (window.innerWidth >= 640) {
+      gsap.to(".pr-appear", {
+        scrollTrigger: {
+          trigger: ".pr-appear",
+          start: "top bottom",
+          toggleActions: "restart pause resume pause",
+        },
+        y: -25,
+        ease: "power4.out",
+        duration: 1.5,
+        stagger: 0.15,
+      });
+      gsap.from(".pr-appear", {
+        scrollTrigger: {
+          trigger: ".pr-appear",
+          start: "top bottom",
+          toggleActions: "restart pause resume pause",
+        },
+        opacity: 0,
+        duration: 1.2,
+        stagger: 0.15,
+      });
+    }
 
     gsap.to(".ct-appear", {
       scrollTrigger: {
