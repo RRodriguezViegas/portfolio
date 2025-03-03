@@ -99,7 +99,7 @@ function Contact() {
       <div
         className="parallax-oval left-1/4 top-8 absolute -z-10 rounded-full w-48 h-60 rotate-12 bg-[#ff61dd57] blur-md"
         style={{ willChange: "filter, transform" }}
-      />
+      /> */}
 
       <div
         className="ct-appear w-3/4 h-5/6 lg:h-3/6 flex flex-col lg:flex-row rounded-xlp-2"
