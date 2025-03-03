@@ -105,7 +105,7 @@ function Contact() {
         className="ct-appear w-3/4 h-5/6 lg:h-3/6 flex flex-col lg:flex-row rounded-xlp-2"
         style={{ willChange: "filter, transform" }}
       >
-        <section className="w-full lg:w-1/2 h-3/4 flex flex-col justify-between">
+        <section className="w-full lg:w-1/2 h-3/4 mb-8 lg:mb-0 flex flex-col justify-between">
           <div>
             <h1 className="MuseoModerno text-7xl pb-5">Contacto</h1>
             <h3 className="text-xl 2xl:text-2xl">Buenos Aires, Argentina</h3>
@@ -126,7 +126,7 @@ function Contact() {
             </div>
           </div>
         </section>
-        <section className="w-1/2 h-3/4  flex flex-col justify-between">
+        <section className="w-full lg:w-1/2 h-3/4  flex flex-col justify-between">
           <h1 className="text-2xl pb-4">no lo sé</h1>
           <form onSubmit={sendEmail} ref={form}>
             <div className="grid grid-cols-2 gap-4">
