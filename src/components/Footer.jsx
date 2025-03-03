@@ -18,12 +18,12 @@ function Footer({ sections }) {
   };
 
   useGSAP(() => {
-    gsap.to(".ft-appear", {
+    gsap.from(".ft-appear", {
       scrollTrigger: {
         trigger: ".ft-appear",
         toggleActions: "restart pause resume pause",
       },
-      x: -128,
+      x: 128,
       ease: "power4.out",
       duration: 1,
       stagger: 0.2,
@@ -44,11 +44,11 @@ function Footer({ sections }) {
   return (
     <>
       <div className="footer section h-screen flex flex-col justify-center">
-        <section className="border-b-2 border-[#EAD6C9] h-2/4 w-3/4 self-center">
-          <h1 className="ft-appear ml-32 text-4xl font-bold text-[#EAD6C9]">
+        <section className="border-b-2 border-[#EAD6C9] h-2/4 m-2 sm:m-0 sm:w-3/4 self-center">
+          <h1 className="ft-appear text-4xl font-bold text-[#EAD6C9]">
             Información y links
           </h1>
-          <div className="text-2xl ml-32 font-light text-[#EAD6C9] space-y-4 pt-4">
+          <div className="text-2xl font-light text-[#EAD6C9] space-y-4 pt-4">
             <p className="ft-appear">ramiirv26@gmail.com</p>
             <p className="ft-appear">+54 9 11 4146-1834</p>
             <a
@@ -63,7 +63,7 @@ function Footer({ sections }) {
             </button>
           </div>
         </section>
-        <section className="w-3/4 self-center flex justify-between pt-14 text-xl text-[#EAD6C9]">
+        <section className="m-2 sm:m-0 sm:w-3/4 self-center flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-between pt-14 text-xl text-[#EAD6C9]">
           <p>&copy; {currentYear} Rama. Todos los derechos reservados</p>
           <div className="space-x-6">
             <a
