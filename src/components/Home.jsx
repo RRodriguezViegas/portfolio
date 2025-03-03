@@ -301,25 +301,27 @@ function Home({ sections }) {
         </div>
 
         <div className="w-3/4 pt-12 flex justify-between z-10">
-          <h1 className="text-5xl text-[#242038]">&lt;Rama /&gt;</h1>
+          <h1 className="text-2xl lg:text-5xl text-[#242038]">
+            &lt;Rama /&gt;
+          </h1>
           <HamburgerMenu sections={sections} />
         </div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center h-full">
           <div className="flex flex-col items-center">
-            <h1 className="z-50 appear text-3xl text-[#242038]">
+            <h1 className="z-50 appear text-xl lg:text-3xl text-[#242038]">
               Hola! Soy{" "}
               <span className="inline-block rama text-[#3234ac]"> #%@& </span>
             </h1>
-            <h2 className="z-50 mb-16 mt-6 appear text-5xl font-semibold text-[#242038]">
+            <h2 className="z-50 mb-16 mt-6 appear text-3xl lg:text-5xl font-semibold text-[#242038]">
               Transformo ideas 💡 en <br /> experiencias web funcionales ✨{" "}
-              <br />y atractivas. 🔥
+              <br />y atractivas 🔥
             </h2>
-            <p className="z-50 appear text-2xl underline text-[#242038]">
+            <p className="z-50 appear text-lg lg:text-2xl underline text-[#242038]">
               <a href="#">Hagamos posible tu proyecto!</a>
             </p>
           </div>
         </div>
-        <div className="flex justify-center absolute left-[calc(50%-36px)] bottom-20">
+        <div className="hidden lg:flex justify-center absolute left-[calc(50%-36px)] bottom-20">
           <span className={`left-bar h-0.5 bg-[#242038] rounded-xl w-9`}></span>
           <span
             className={`right-bar h-0.5 bg-[#242038] rounded-xl w-9`}
