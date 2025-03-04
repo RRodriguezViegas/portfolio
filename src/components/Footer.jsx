@@ -44,7 +44,7 @@ function Footer({ sections }) {
   return (
     <>
       <div className="footer section h-screen flex flex-col justify-center">
-        <section className="border-b-2 border-[#e9e9e9] h-2/4 m-4 sm:m-0 sm:w-3/4 self-center">
+        <section className="sm:border-b-2 border-[#e9e9e9] h-2/4 px-4 sm:px-0 w-full sm:w-3/4 self-center">
           <h1 className="ft-appear text-4xl font-bold text-[#e9e9e9]">
             Información y links
           </h1>
@@ -63,6 +63,7 @@ function Footer({ sections }) {
             </button>
           </div>
         </section>
+        <div className="border-b-2 border-[#e9e9e9] m-4 w-3/4self-center sm:hidden" />
         <section className="m-4 sm:m-0 sm:w-3/4 self-center flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-between pt-14 text-xl text-[#e9e9e9]">
           <p>&copy; {currentYear} Rama. Todos los derechos reservados</p>
           <div className="space-x-6">
