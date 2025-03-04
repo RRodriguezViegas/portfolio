@@ -145,7 +145,7 @@ function Home({ sections }) {
   return (
     <>
       <div className="bg-appear home-bg section h-screen relative flex justify-center">
-        <div className="absolute w-1/2 h-screen left-0 flex flex-col justify-center bg-[#3a5bff3a] opacity-90 blur-3xl">
+        <div className="absolute w-1/2 h-screen left-0 hidden lg:flex flex-col justify-center bg-[#3a5bff3a] opacity-90 blur-3xl">
           <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
@@ -297,6 +297,42 @@ function Home({ sections }) {
             <path
               fill="#06c9ff80"
               d="M30.4,-31.7C45,-31.2,66.3,-29.8,77.5,-19.5C88.7,-9.1,89.9,10.2,80.7,22.4C71.5,34.6,52,39.6,36.8,51C21.6,62.4,10.8,80.2,-1.7,82.5C-14.1,84.7,-28.3,71.5,-37.1,58.1C-46,44.7,-49.7,31,-58.1,16.2C-66.6,1.5,-79.8,-14.4,-76,-24.2C-72.1,-34,-51.2,-37.9,-35.7,-38C-20.2,-38.2,-10.1,-34.7,-1.1,-33.2C7.9,-31.7,15.8,-32.2,30.4,-31.7Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </div>
+
+        <div className="absolute flex lg:hidden justify-center w-full h-full items-center overflow-hidden">
+          <svg
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute blur-3xl parallax-blob-rot-1"
+          >
+            <path
+              fill="#4e3aff96"
+              d="M7.4,0.9C12,11.7,19.7,24.7,9.7,37.8C-0.3,50.8,-28.1,63.9,-34.4,57C-40.7,50.2,-25.5,23.4,-16.2,6.1C-6.8,-11.2,-3.4,-19,-1,-18.7C1.4,-18.3,2.8,-9.9,7.4,0.9Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+          <svg
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute blur-3xl parallax-blob-rot-1 rotate-45"
+          >
+            <path
+              fill="#3a5bff85"
+              d="M27.8,-23.9C42,-4.4,63.5,7.5,61.5,13.1C59.5,18.7,33.9,18.1,13.7,27.4C-6.5,36.7,-21.4,56,-38.1,56.6C-54.8,57.2,-73.3,39.1,-74.1,21C-74.9,3,-58.1,-14.9,-42.8,-34.7C-27.5,-54.5,-13.7,-76.2,-3.5,-73.4C6.8,-70.7,13.6,-43.5,27.8,-23.9Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+          <svg
+            viewBox="0 0 200 200"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute blur-3xl parallax-blob-rot-1"
+          >
+            <path
+              fill="#06c9ff90"
+              d="M27.8,-23.9C42,-4.4,63.5,7.5,61.5,13.1C59.5,18.7,33.9,18.1,13.7,27.4C-6.5,36.7,-21.4,56,-38.1,56.6C-54.8,57.2,-73.3,39.1,-74.1,21C-74.9,3,-58.1,-14.9,-42.8,-34.7C-27.5,-54.5,-13.7,-76.2,-3.5,-73.4C6.8,-70.7,13.6,-43.5,27.8,-23.9Z"
               transform="translate(100 100)"
             />
           </svg>
