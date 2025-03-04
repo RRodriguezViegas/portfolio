@@ -9,42 +9,44 @@ function Contact() {
   const form = useRef();
 
   useGSAP(() => {
-    gsap.to(".parallax-circle", {
-      y: 20,
-      x: 40,
-      duration: 5,
-      ease: "power1.inOut",
-      repeat: -1,
-      yoyo: true,
-    });
+    if (window.innerWidth >= 1024) {
+      gsap.to(".parallax-circle", {
+        y: 20,
+        x: 40,
+        duration: 5,
+        ease: "power1.inOut",
+        repeat: -1,
+        yoyo: true,
+      });
 
-    gsap.to(".parallax-pill", {
-      y: 90,
-      x: -400,
-      duration: 23,
-      ease: "power1.inOut",
-      repeat: -1,
-      yoyo: true,
-    });
+      gsap.to(".parallax-pill", {
+        y: 90,
+        x: -400,
+        duration: 23,
+        ease: "power1.inOut",
+        repeat: -1,
+        yoyo: true,
+      });
 
-    gsap.to(".parallax-oval", {
-      y: 0,
-      x: -300,
-      duration: 26,
-      ease: "power2.inOut",
-      repeat: -1,
-      yoyo: true,
-      delay: 2,
-    });
+      gsap.to(".parallax-oval", {
+        y: 0,
+        x: -300,
+        duration: 26,
+        ease: "power2.inOut",
+        repeat: -1,
+        yoyo: true,
+        delay: 2,
+      });
 
-    gsap.to(".parallax-oval", {
-      y: 150,
-      duration: 26,
-      ease: "power2.inOut",
-      repeat: -1,
-      yoyo: true,
-      delay: 2.3,
-    });
+      gsap.to(".parallax-oval", {
+        y: 150,
+        duration: 26,
+        ease: "power2.inOut",
+        repeat: -1,
+        yoyo: true,
+        delay: 2.3,
+      });
+    }
   });
 
   useEffect(() => {
