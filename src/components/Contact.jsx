@@ -102,7 +102,7 @@ function Contact() {
       /> */}
 
       <div
-        className="ct-appear w-3/4 h-5/6 lg:h-3/6 flex flex-col lg:flex-row"
+        className="ct-appear mx-4 sm:mx-0 w-full sm:w-3/4 h-5/6 lg:h-3/6 flex flex-col lg:flex-row"
         style={{ willChange: "filter, transform" }}
       >
         <section className="w-full xl:w-1/2 h-3/4 mb-8 lg:mb-0 flex flex-col justify-between">
