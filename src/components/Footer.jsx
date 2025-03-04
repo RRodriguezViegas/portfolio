@@ -18,25 +18,27 @@ function Footer({ sections }) {
   };
 
   useGSAP(() => {
-    gsap.from(".ft-appear", {
-      scrollTrigger: {
-        trigger: ".ft-appear",
-        toggleActions: "restart pause resume pause",
-      },
-      x: 128,
-      ease: "power4.out",
-      duration: 1,
-      stagger: 0.2,
-    });
-    gsap.from(".ft-appear", {
-      scrollTrigger: {
-        trigger: ".ft-appear",
-        toggleActions: "restart pause resume pause",
-      },
-      opacity: 0,
-      duration: 1,
-      stagger: 0.2,
-    });
+    if (window.innerWidth >= 1024) {
+      gsap.from(".ft-appear", {
+        scrollTrigger: {
+          trigger: ".ft-appear",
+          toggleActions: "restart pause resume pause",
+        },
+        x: 128,
+        ease: "power4.out",
+        duration: 1,
+        stagger: 0.2,
+      });
+      gsap.from(".ft-appear", {
+        scrollTrigger: {
+          trigger: ".ft-appear",
+          toggleActions: "restart pause resume pause",
+        },
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+      });
+    }
   });
 
   const currentYear = new Date().getFullYear();
@@ -58,7 +60,10 @@ function Footer({ sections }) {
             >
               Descargar CV
             </a>
-            <button className="ft-appear <underline" onClick={handleBackToTop}>
+            <button
+              className="hidden lg:block ft-appear <underline"
+              onClick={handleBackToTop}
+            >
               Volver arriba
             </button>
           </div>
