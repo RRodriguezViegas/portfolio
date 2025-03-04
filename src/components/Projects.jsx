@@ -62,7 +62,7 @@ function Projects() {
               style={{ willChange: "filter, transform" }}
             />
             <div className="relative w-1/2 h-1/2 rounded-sm">
-              <span className="text-6xl sm:text-9xl text-[#242038] MuseoModerno cursor-pointer">
+              <span className="text-8xl sm:text-9xl text-[#242038] MuseoModerno cursor-pointer">
                 R
               </span>
             </div>
