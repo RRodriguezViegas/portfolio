@@ -87,7 +87,7 @@ function Contact() {
   };
 
   return (
-    <div className="about-bg z-0 relative section h-screen flex items-center justify-center text-[#242038]">
+    <div className="about-bg z-0 relative section h-screen my-20 flex items-center justify-center text-[#242038]">
       {/* <div
         className="parallax-circle -left-40 -bottom-40 absolute -z-10 rounded-full w-96 h-96 bg-[#ff61dd57] blur-md"
         style={{ willChange: "filter, transform" }}
@@ -105,7 +105,7 @@ function Contact() {
         className="ct-appear mx-4 sm:mx-0 w-full sm:w-3/4 h-5/6 lg:h-3/6 flex flex-col lg:flex-row"
         style={{ willChange: "filter, transform" }}
       >
-        <section className="w-full xl:w-1/2 h-3/4 mb-12 lg:mb-0 flex flex-col justify-between">
+        <section className="w-full xl:w-1/2 h-full mb-20 lg:mb-0 flex flex-col justify-between">
           <div>
             <h1 className="MuseoModerno text-4xl lg:text-7xl pb-5">Contacto</h1>
             <h3 className="text-xl 2xl:text-2xl">Buenos Aires, Argentina</h3>
@@ -126,7 +126,7 @@ function Contact() {
             </div>
           </div>
         </section>
-        <section className="w-full xl:w-1/2 h-3/4 flex flex-col justify-between">
+        <section className="w-full xl:w-1/2 h-full flex flex-col justify-between">
           <h1 className="text-2xl pb-4">Enviame un mensaje</h1>
           <form onSubmit={sendEmail} ref={form}>
             <div className="grid grid-cols-2 gap-4">
