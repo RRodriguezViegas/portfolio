@@ -44,7 +44,7 @@ function Footer({ sections }) {
   return (
     <>
       <div className="footer section h-screen flex flex-col justify-center">
-        <section className="sm:border-b-2 border-[#e9e9e9] h-2/4 px-4 sm:px-0 w-full sm:w-3/4 self-center">
+        <section className="sm:border-b-2 border-[#e9e9e9] h-2/4 px-4 sm:px-0 w-full sm:w-3/4 self-center overflow-hidden">
           <h1 className="ft-appear text-4xl font-bold text-[#e9e9e9]">
             Información y links
           </h1>
