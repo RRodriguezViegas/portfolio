@@ -107,11 +107,11 @@ function Contact() {
       >
         <section className="w-full xl:w-1/2 h-3/4 mb-8 lg:mb-0 flex flex-col justify-between">
           <div>
-            <h1 className="MuseoModerno text-7xl pb-5">Contacto</h1>
+            <h1 className="MuseoModerno text-4xl lg:text-7xl pb-5">Contacto</h1>
             <h3 className="text-xl 2xl:text-2xl">Buenos Aires, Argentina</h3>
             <p className="text-lg 2xl:text-xl font-light">{hora}</p>
           </div>
-          <div className="flex flex-col sm:flex-row justify-between text-xl 2xl:text-2xl xl:mr-28">
+          <div className="flex flex-col space-y-4 sm:space-y-0 sm:flex-row justify-between text-xl 2xl:text-2xl lg:mr-4 xl:mr-28">
             <div>
               <p>Enviame un mail</p>
               <p className="font-light text-lg 2xl:text-xl">
