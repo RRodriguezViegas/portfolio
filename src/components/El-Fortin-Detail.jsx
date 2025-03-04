@@ -274,8 +274,14 @@ function ElFortinDetail() {
       </section>
 
       <section className="opacity-1 flex w-3/4 my-6 self-center">
-        <div className="flex flex-col items-center bg-[#00000011] w-1/2 h-96 border border-[#2e2e2e11] hover:bg-[#00000093] transition-all duration-100"></div>
-        <div className="flex flex-col items-center bg-[#00000011] w-1/2 h-96 border border-[#2e2e2e11] hover:bg-[#00000093] transition-all duration-100"></div>
+        <a
+          href="http://localhost:5173"
+          className="flex flex-col items-center bg-[#00000011] w-1/2 h-96 border border-[#2e2e2e11] hover:bg-[#00000093] transition-all duration-100"
+        ></a>
+        <a
+          href="http://localhost:5173/woofer"
+          className="flex flex-col items-center bg-[#00000011] w-1/2 h-96 border border-[#2e2e2e11] hover:bg-[#00000093] transition-all duration-100"
+        ></a>
       </section>
     </div>
   );
