@@ -14,7 +14,7 @@ function Projects() {
 
       <div className="pr-appear grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-10 p-4 w-[80vw] max-w-[900px]">
         <Link to={"/elfortin"}>
-          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
+          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl lg:hover:scale-110 lg:hover:-translate-y-6 ease-in-out duration-300">
             <div
               className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/el-fortin-bg.jpg')] bg-cover bg-no-repeat blur-sm"
               style={{ willChange: "filter, transform" }}
@@ -28,7 +28,7 @@ function Projects() {
         </Link>
 
         <Link>
-          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
+          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl lg:hover:scale-110 lg:hover:-translate-y-6 ease-in-out duration-300">
             <div
               className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/woofer-bg.png')] bg-contain blur-sm"
               style={{ willChange: "filter, transform" }}
@@ -42,7 +42,7 @@ function Projects() {
         </Link>
 
         <Link>
-          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
+          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl lg:hover:scale-110 lg:hover:-translate-y-6 ease-in-out duration-300">
             <div
               className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/drivers-bg.jpg')] bg-contain blur-sm"
               style={{ willChange: "filter, transform" }}
@@ -56,7 +56,7 @@ function Projects() {
         </Link>
 
         <Link>
-          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl hover:scale-110 hover:-translate-y-6 ease-in-out duration-300">
+          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl lg:hover:scale-110 lg:hover:-translate-y-6 ease-in-out duration-300">
             <div
               className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/rama-portfolio-bg.png')] bg-contain blur-sm"
               style={{ willChange: "filter, transform" }}
