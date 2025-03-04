@@ -302,11 +302,11 @@ function Home({ sections }) {
           </svg>
         </div>
 
-        <div className="absolute flex lg:hidden justify-center w-full h-full items-center overflow-hidden">
+        <div className="appear absolute flex lg:hidden justify-center w-full h-full items-center blur-3xl overflow-hidden">
           <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute blur-3xl parallax-blob-rot-1"
+            className="absolute parallax-blob-rot-1"
           >
             <path
               fill="#4e3aff96"
@@ -317,7 +317,7 @@ function Home({ sections }) {
           <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute blur-3xl parallax-blob-rot-1 rotate-45"
+            className="absolute parallax-blob-rot-2 rotate-45"
           >
             <path
               fill="#3a5bff85"
@@ -328,7 +328,7 @@ function Home({ sections }) {
           <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute blur-3xl parallax-blob-rot-1"
+            className="absolute parallax-blob-rot-1"
           >
             <path
               fill="#06c9ff90"
