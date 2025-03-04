@@ -90,24 +90,8 @@ function Contact() {
 
   return (
     <div className="about-bg z-0 relative section h-screen my-20 flex items-center justify-center text-[#242038]">
-      {/* <div
-        className="parallax-circle -left-40 -bottom-40 absolute -z-10 rounded-full w-96 h-96 bg-[#ff61dd57] blur-md"
-        style={{ willChange: "filter, transform" }}
-      />
-      <div
-        className="parallax-pill left-3/4 absolute -z-10 rounded-full w-96 h-40 rotate-12 bg-[#ff61dd57] blur-md"
-        style={{ willChange: "filter, transform" }}
-      />
-      <div
-        className="parallax-oval left-1/4 top-8 absolute -z-10 rounded-full w-48 h-60 rotate-12 bg-[#ff61dd57] blur-md"
-        style={{ willChange: "filter, transform" }}
-      /> */}
-
-      <div
-        className="ct-appear mx-4 sm:mx-0 w-full sm:w-3/4 h-5/6 lg:h-3/6 flex flex-col lg:flex-row"
-        style={{ willChange: "filter, transform" }}
-      >
-        <section className="w-full xl:w-1/2 h-full mb-20 lg:mb-0 flex flex-col justify-between">
+      <div className="ct-appear mx-4 sm:mx-0 w-full sm:w-3/4 h-full space-y-12 lg:h-3/6 flex flex-col lg:flex-row">
+        <section className="w-full xl:w-1/2 h-full mb-12 lg:mb-0 flex flex-col justify-between">
           <div>
             <h1 className="MuseoModerno text-4xl lg:text-7xl pb-5">Contacto</h1>
             <h3 className="text-xl 2xl:text-2xl">Buenos Aires, Argentina</h3>
