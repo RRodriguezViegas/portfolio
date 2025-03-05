@@ -28,6 +28,10 @@ function ElFortinDetail() {
     };
   }, []);
 
+  const handleVideoClick = videoRef => {
+    videoRef.current.play();
+  };
+
   useGSAP(() => {
     gsap.to(".appear", {
       y: -25,
@@ -205,6 +209,7 @@ function ElFortinDetail() {
             muted
             playsInline
             className="rounded-md"
+            onClick={() => handleVideoClick(videoRef1)}
           />
           <img
             src="elfortin-files/elfortin-publicaciones-1.svg"
@@ -251,6 +256,7 @@ function ElFortinDetail() {
             muted
             playsinline
             className="rounded-md"
+            onClick={() => handleVideoClick(videoRef2)}
           />
         </div>
       </section>
