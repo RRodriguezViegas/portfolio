@@ -9,8 +9,9 @@ function ElFortinDetail() {
   const videoRef2 = useRef(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     const handleResize = () => {
-      window.scrollTo(0, 0);
       if (window.innerWidth < 768) {
         // Si el ancho de pantalla es menor que 768px (mobile)
         videoRef1.current.autoplay = false;
@@ -164,12 +165,14 @@ function ElFortinDetail() {
       </section>
 
       <section className="appear-at-scroll my-6 lg:my-12 flex items-center justify-center">
-        <div className="w-full md:w-3/4 mx-4 md:mx-0 h-1/6 self-center">
-          <img
-            src="elfortin-files/elfortin-mockup-phone.png"
-            alt="Mockup de un celular con el sitio web de El Fortin"
-            className="object-contain w-full h-full rounded-md"
-          />
+        <div className="w-full md:w-3/4 aspect-[16/9] mx-4 md:mx-0 h-1/6 self-center">
+          <div className="rounded-md w-full h-full">
+            <img
+              src="elfortin-files/elfortin-mockup-phone.png"
+              alt="Mockup de un celular con el sitio web de El Fortin"
+              className="object-contain w-full h-full rounded-md "
+            />
+          </div>
         </div>
       </section>
 
@@ -204,26 +207,34 @@ function ElFortinDetail() {
 
       <section className="appear-at-scroll mx-4 md:mx-0 my-6 lg:my-12 flex flex-col items-center space-y-4">
         <div className="w-full md:w-3/4 space-y-4">
-          <video
-            ref={videoRef1}
-            src="elfortin-files/elfortin-publicaciones-cc.mov"
-            autoPlay
-            loop
-            muted
-            playsinline
-            className="rounded-md"
-            onClick={() => handleVideoClick(videoRef1)}
-          />
-          <img
-            src="elfortin-files/elfortin-publicaciones-1.svg"
-            alt="Componentes del panel de gestión de publicaciones"
-            className="rounded-md"
-          />
-          <img
-            src="elfortin-files/elfortin-publicaciones-2.svg"
-            alt="Componentes del panel de gestión de publicaciones"
-            className="rounded-md"
-          />
+          <div className="aspect-[16/9] w-full h-full rounded-md">
+            <video
+              ref={videoRef1}
+              src="elfortin-files/elfortin-publicaciones-cc.mov"
+              autoPlay
+              loop
+              muted
+              playsinline
+              className="rounded-md"
+              onClick={() => handleVideoClick(videoRef1)}
+            />
+          </div>
+
+          <div className="aspect-[16/8] w-full rounded-md">
+            <img
+              src="elfortin-files/elfortin-publicaciones-1.svg"
+              alt="Componentes del panel de gestión de publicaciones"
+              className="rounded-md"
+            />
+          </div>
+
+          <div className="aspect-[16/5] w-full rounded-md">
+            <img
+              src="elfortin-files/elfortin-publicaciones-2.svg"
+              alt="Componentes del panel de gestión de publicaciones"
+              className="rounded-md"
+            />
+          </div>
         </div>
       </section>
 
@@ -250,7 +261,7 @@ function ElFortinDetail() {
       </section>
 
       <section className="appear-at-scroll my-6 lg:my-12 flex items-center justify-center">
-        <div className="w-full mx-4 md:mx-0 md:w-3/4 h-1/6 self-center">
+        <div className="w-full mx-4 md:mx-0 md:w-3/4 aspect-[16/9] rounded-md h-1/6 self-center">
           <video
             ref={videoRef2}
             src="elfortin-files/elfortin-consultas-cc.mov"
@@ -284,7 +295,7 @@ function ElFortinDetail() {
       </section>
 
       <section className="appear-at-scroll flex flex-col space-y-4 w-full md:w-3/4 my-6 lg:my-12 self-center">
-        <div className="flex md:space-x-4 justify-center mx-4 md:mx-0">
+        <div className="flex md:space-x-4 justify-center mx-4 md:mx-0 aspect-[16/5] rounded-md">
           <img
             src="elfortin-files/elfortin-palette.svg"
             alt="Paleta de colores de El Fortin"
@@ -296,16 +307,21 @@ function ElFortinDetail() {
             className="w-1/2"
           />
         </div>
-        <img
-          src="elfortin-files/elfortin-diseno-1.svg"
-          alt="Componente de El Fortin"
-          className="rounded-md mx-2 md:mx-0"
-        />
-        <img
-          src="elfortin-files/elfortin-diseno-2.svg"
-          alt="Componentes de El Fortin"
-          className="rounded-md mx-2 md:mx-0"
-        />
+        <div className="aspect-[16/9]">
+          <img
+            src="elfortin-files/elfortin-diseno-1.svg"
+            alt="Componente de El Fortin"
+            className="rounded-md mx-2 md:mx-0"
+          />
+        </div>
+
+        <div className="aspect-[16/9]">
+          <img
+            src="elfortin-files/elfortin-diseno-2.svg"
+            alt="Componentes de El Fortin"
+            className="rounded-md mx-2 md:mx-0"
+          />
+        </div>
       </section>
 
       <section className="opacity-1 flex w-3/4 my-6 self-center">
