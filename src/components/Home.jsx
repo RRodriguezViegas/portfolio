@@ -338,8 +338,8 @@ function Home({ sections }) {
           </svg>
         </div>
 
-        <div className="w-3/4 pt-12 flex justify-between z-10">
-          <h1 className="text-2xl lg:text-5xl text-[#242038]">
+        <div className="w-3/4 pt-12 flex flex-col items-center z-10">
+          {/* <h1 className="text-2xl lg:text-5xl text-[#242038]">
             &lt;Rama /&gt;
           </h1> */}
           <img src="LOGO.png" alt="" />
