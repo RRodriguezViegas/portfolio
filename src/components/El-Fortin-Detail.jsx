@@ -10,6 +10,7 @@ function ElFortinDetail() {
 
   useEffect(() => {
     const handleResize = () => {
+      window.scrollTo(0, 0);
       if (window.innerWidth < 768) {
         // Si el ancho de pantalla es menor que 768px (mobile)
         videoRef1.current.autoplay = false;
