@@ -5,15 +5,18 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
 function ElFortinDetail() {
-  const videoRef = useRef(null);
+  const videoRef1 = useRef(null);
+  const videoRef2 = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
         // Si el ancho de pantalla es menor que 768px (mobile)
-        videoRef.current.autoplay = false;
+        videoRef1.current.autoplay = false;
+        videoRef2.current.autoplay = false;
       } else {
-        videoRef.current.autoplay = true;
+        videoRef1.current.autoplay = true;
+        videoRef2.current.autoplay = true;
       }
     };
 
@@ -195,7 +198,7 @@ function ElFortinDetail() {
       <section className="appear-at-scroll mx-4 md:mx-0 my-6 lg:my-12 flex flex-col items-center space-y-4">
         <div className="w-full md:w-3/4 space-y-4">
           <video
-            ref={videoRef}
+            ref={videoRef1}
             src="elfortin-files/elfortin-publicaciones-cc.mov"
             autoPlay
             loop
@@ -241,7 +244,7 @@ function ElFortinDetail() {
       <section className="appear-at-scroll my-6 lg:my-12 flex items-center justify-center">
         <div className="w-full mx-4 md:mx-0 md:w-3/4 h-1/6 self-center">
           <video
-            ref={videoRef}
+            ref={videoRef2}
             src="elfortin-files/elfortin-consultas-cc.mov"
             autoPlay
             loop
