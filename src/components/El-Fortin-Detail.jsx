@@ -55,7 +55,7 @@ function ElFortinDetail() {
       </section>
 
       <section className="appear my-2 lg:my-6 flex items-center justify-center">
-        <div className="w-full md:w-3/4 mx-4 md:mx-0 h-1/6 self-center">
+        <div className="w-full bg-slate-200 aspect-auto md:w-3/4 mx-4 md:mx-0 self-center">
           <img
             src="elfortin-files/elfortin-mockup.png"
             alt="Mockup de una laptop con el sitio web de El Fortin"
