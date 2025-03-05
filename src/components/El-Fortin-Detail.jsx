@@ -58,7 +58,7 @@ function ElFortinDetail() {
         <div className="w-full md:w-3/4 mx-4 md:mx-0 h-1/6 self-center">
           <img
             src="elfortin-files/elfortin-mockup.png"
-            alt="what"
+            alt="Mockup de una laptop con el sitio web de El Fortin"
             className="object-contain w-full h-full rounded-md"
           />
         </div>
@@ -136,7 +136,7 @@ function ElFortinDetail() {
         <div className="w-full md:w-3/4 mx-4 md:mx-0 h-1/6 self-center">
           <img
             src="elfortin-files/elfortin-mockup-phone.png"
-            alt="what"
+            alt="Mockup de un celular con el sitio web de El Fortin"
             className="object-contain w-full h-full rounded-md"
           />
         </div>
@@ -183,12 +183,12 @@ function ElFortinDetail() {
           />
           <img
             src="elfortin-files/elfortin-publicaciones-1.svg"
-            alt=""
+            alt="Componentes del panel de gestión de publicaciones"
             className="rounded-md"
           />
           <img
             src="elfortin-files/elfortin-publicaciones-2.svg"
-            alt=""
+            alt="Componentes del panel de gestión de publicaciones"
             className="rounded-md"
           />
         </div>
@@ -252,23 +252,23 @@ function ElFortinDetail() {
         <div className="flex md:space-x-4 justify-center mx-4 md:mx-0">
           <img
             src="elfortin-files/elfortin-palette.svg"
-            alt=""
+            alt="Paleta de colores de El Fortin"
             className="w-1/2"
           />
           <img
             src="elfortin-files/elfortin-icons.png"
-            alt=""
+            alt="Iconos del sitio web"
             className="w-1/2"
           />
         </div>
         <img
           src="elfortin-files/elfortin-diseno-1.svg"
-          alt=""
+          alt="Componente de El Fortin"
           className="rounded-md mx-2 md:mx-0"
         />
         <img
           src="elfortin-files/elfortin-diseno-2.svg"
-          alt=""
+          alt="Componentes de El Fortin"
           className="rounded-md mx-2 md:mx-0"
         />
       </section>
