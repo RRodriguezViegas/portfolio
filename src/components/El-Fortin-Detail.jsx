@@ -1,9 +1,30 @@
 import React from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
 function ElFortinDetail() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        // Si el ancho de pantalla es menor que 768px (mobile)
+        videoRef.current.autoplay = false;
+      } else {
+        videoRef.current.autoplay = true;
+      }
+    };
+
+    handleResize(); // Verifica el tamaño al inicio
+    window.addEventListener("resize", handleResize); // Escucha los cambios de tamaño
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Limpiar el evento
+    };
+  }, []);
+
   useGSAP(() => {
     gsap.to(".appear", {
       y: -25,
@@ -174,11 +195,12 @@ function ElFortinDetail() {
       <section className="appear-at-scroll mx-4 md:mx-0 my-6 lg:my-12 flex flex-col items-center space-y-4">
         <div className="w-full md:w-3/4 space-y-4">
           <video
+            ref={videoRef}
             src="elfortin-files/elfortin-publicaciones-cc.mov"
             autoPlay
             loop
             muted
-            playsinline
+            playsInline
             className="rounded-md"
           />
           <img
