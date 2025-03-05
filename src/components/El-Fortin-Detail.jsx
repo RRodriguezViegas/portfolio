@@ -88,7 +88,7 @@ function ElFortinDetail() {
         <div className="w-full md:w-3/4 aspect-[16/11] mx-4 md:mx-0 self-center">
           <div className="rounded-md">
             <img
-              src="elfortin-files/elfortin-mockup.png"
+              src="elfortin-files/elfortin-mockup.jpg"
               alt="Mockup de una laptop con el sitio web de El Fortin"
               className="object-contain w-full h-full rounded-md"
             />
@@ -168,7 +168,7 @@ function ElFortinDetail() {
         <div className="w-full md:w-3/4 aspect-[16/9] mx-4 md:mx-0 h-1/6 self-center">
           <div className="rounded-md w-full h-full">
             <img
-              src="elfortin-files/elfortin-mockup-phone.png"
+              src="elfortin-files/elfortin-mockup-phone.jpg"
               alt="Mockup de un celular con el sitio web de El Fortin"
               className="object-contain w-full h-full rounded-md "
             />
