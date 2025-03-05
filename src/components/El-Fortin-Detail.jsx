@@ -209,7 +209,7 @@ function ElFortinDetail() {
             autoPlay
             loop
             muted
-            playsInline
+            playsinline
             className="rounded-md"
             onClick={() => handleVideoClick(videoRef1)}
           />
