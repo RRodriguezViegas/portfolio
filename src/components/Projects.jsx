@@ -16,7 +16,7 @@ function Projects() {
         <Link to={"/elfortin"}>
           <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl lg:hover:scale-110 lg:hover:-translate-y-6 ease-in-out duration-300">
             <div
-              className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/el-fortin-bg.jpg')] bg-cover bg-no-repeat blur-sm"
+              className="absolute w-full h-full flex justify-center items-center bg-[url('/projects-files/el-fortin-bg.jpg')] bg-cover bg-no-repeat blur-sm"
               style={{ willChange: "filter, transform" }}
             />
             <img
@@ -30,7 +30,7 @@ function Projects() {
         <Link>
           <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl lg:hover:scale-110 lg:hover:-translate-y-6 ease-in-out duration-300">
             <div
-              className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/woofer-bg.png')] bg-contain blur-sm"
+              className="absolute w-full h-full flex justify-center items-center bg-[url('/projects-files/woofer-bg.png')] bg-contain blur-sm"
               style={{ willChange: "filter, transform" }}
             />
             <img
@@ -44,7 +44,7 @@ function Projects() {
         <Link>
           <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl lg:hover:scale-110 lg:hover:-translate-y-6 ease-in-out duration-300">
             <div
-              className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/drivers-bg.jpg')] bg-contain blur-sm"
+              className="absolute w-full h-full flex justify-center items-center bg-[url('/projects-files/drivers-bg.jpg')] bg-contain blur-sm"
               style={{ willChange: "filter, transform" }}
             />
             <img
@@ -58,7 +58,7 @@ function Projects() {
         <Link>
           <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl lg:hover:scale-110 lg:hover:-translate-y-6 ease-in-out duration-300">
             <div
-              className="absolute w-full h-full flex justify-center items-center bg-[url('projects-files/rama-portfolio-bg.png')] bg-contain blur-sm"
+              className="absolute w-full h-full flex justify-center items-center bg-[url('/projects-files/rama-portfolio-bg.png')] bg-contain blur-sm"
               style={{ willChange: "filter, transform" }}
             />
             <div className="relative w-1/2 h-1/2 rounded-sm">
