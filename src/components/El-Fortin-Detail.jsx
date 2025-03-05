@@ -206,11 +206,9 @@ function ElFortinDetail() {
           <video
             ref={videoRef1}
             src="elfortin-files/elfortin-publicaciones-cc.mov"
-            autoPlay
             loop
             muted
             playsInline
-            controls
             className="rounded-md"
             onClick={() => handleVideoClick(videoRef1)}
           />
@@ -254,7 +252,6 @@ function ElFortinDetail() {
           <video
             ref={videoRef2}
             src="elfortin-files/elfortin-consultas-cc.mov"
-            autoPlay
             loop
             muted
             playsinline
