@@ -241,6 +241,7 @@ function ElFortinDetail() {
       <section className="appear-at-scroll my-6 lg:my-12 flex items-center justify-center">
         <div className="w-full mx-4 md:mx-0 md:w-3/4 h-1/6 self-center">
           <video
+            ref={videoRef}
             src="elfortin-files/elfortin-consultas-cc.mov"
             autoPlay
             loop
