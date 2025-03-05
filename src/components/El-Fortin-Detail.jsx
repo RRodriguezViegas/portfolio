@@ -33,8 +33,8 @@ function ElFortinDetail() {
   };
 
   useGSAP(() => {
-    gsap.to(".appear", {
-      y: -25,
+    gsap.from(".appear", {
+      y: 25,
       ease: "power4.out",
       delay: 0.5,
       duration: 1.5,
@@ -82,13 +82,15 @@ function ElFortinDetail() {
         </div>
       </section>
 
-      <section className="appear lg:my-2 flex items-center justify-center">
+      <section className="appear my-2 flex items-center justify-center">
         <div className="w-full md:w-3/4 aspect-[16/11] mx-4 md:mx-0 self-center">
-          <img
-            src="elfortin-files/elfortin-mockup.png"
-            alt="Mockup de una laptop con el sitio web de El Fortin"
-            className="object-contain w-full h-full rounded-md "
-          />
+          <div className="rounded-md">
+            <img
+              src="elfortin-files/elfortin-mockup.png"
+              alt="Mockup de una laptop con el sitio web de El Fortin"
+              className="object-contain w-full h-full rounded-md"
+            />
+          </div>
         </div>
       </section>
 
