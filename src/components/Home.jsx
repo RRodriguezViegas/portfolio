@@ -105,7 +105,7 @@ function Home({ sections }) {
       text: "Rama",
       duration: 2.3,
       ease: "power4.out",
-      delay: 0.6,
+      delay: 1.2,
     });
 
     gsap.to(".parallax-blob-rot-1", {
