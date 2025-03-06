@@ -72,11 +72,11 @@ function Projects() {
         <div
           className="bg-gray-400 aspect-square rounded-sm blur-sm"
           style={{ willChange: "filter, transform" }}
-        ></div>
+        />
         <div
           className="bg-gray-400 aspect-square rounded-sm blur-sm"
           style={{ willChange: "filter, transform" }}
-        ></div>
+        />
       </div>
 
       {/* <span className="pr-appear text-2xl text-[#242038] underline">
