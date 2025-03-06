@@ -70,11 +70,11 @@ function Projects() {
         </Link>
 
         <div
-          className="bg-gray-400 aspect-square rounded-sm blur-sm"
+          className="bg-gray-300 aspect-square rounded-sm blur-sm"
           style={{ willChange: "filter, transform" }}
         />
         <div
-          className="bg-gray-400 aspect-square rounded-sm blur-sm"
+          className="bg-gray-300 aspect-square rounded-sm blur-sm"
           style={{ willChange: "filter, transform" }}
         />
       </div>
