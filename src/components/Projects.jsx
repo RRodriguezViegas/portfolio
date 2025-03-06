@@ -27,47 +27,22 @@ function Projects() {
           </div>
         </Link>
 
-        <Link>
-          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl lg:hover:scale-110 lg:hover:-translate-y-6 ease-in-out duration-300">
-            <div
-              className="absolute w-full h-full flex justify-center items-center bg-[url('/projects-files/woofer-bg.png')] bg-contain blur-sm"
-              style={{ willChange: "filter, transform" }}
-            />
-            <img
-              className="relative w-1/2 h-1/2 rounded-sm"
-              src="projects-files/woofer-logo.png"
-              alt="Logo Woofer"
-            />
-          </div>
+        <Link to={"/ramadev-portfolio"}>
+          <div
+            className="bg-gray-300 aspect-square rounded-sm blur-sm"
+            style={{ willChange: "filter, transform" }}
+          />
         </Link>
 
-        <Link>
-          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl lg:hover:scale-110 lg:hover:-translate-y-6 ease-in-out duration-300">
-            <div
-              className="absolute w-full h-full flex justify-center items-center bg-[url('/projects-files/drivers-bg.jpg')] bg-contain blur-sm"
-              style={{ willChange: "filter, transform" }}
-            />
-            <img
-              className="relative w-1/2 h-1/2 rounded-sm"
-              src="projects-files/drivers-logo.png"
-              alt="Logo Drivers"
-            />
-          </div>
-        </Link>
+        <div
+          className="bg-gray-300 aspect-square rounded-sm blur-sm"
+          style={{ willChange: "filter, transform" }}
+        />
 
-        <Link>
-          <div className="relative aspect-square rounded-sm flex justify-center items-center shadow-2xl lg:hover:scale-110 lg:hover:-translate-y-6 ease-in-out duration-300">
-            <div
-              className="absolute w-full h-full flex justify-center items-center bg-[url('/projects-files/rama-portfolio-bg.png')] bg-contain blur-sm"
-              style={{ willChange: "filter, transform" }}
-            />
-            <div className="relative w-1/2 h-1/2 rounded-sm">
-              <span className="text-8xl sm:text-9xl text-[#242038] MuseoModerno cursor-pointer">
-                R
-              </span>
-            </div>
-          </div>
-        </Link>
+        <div
+          className="bg-gray-300 aspect-square rounded-sm blur-sm"
+          style={{ willChange: "filter, transform" }}
+        />
 
         <div
           className="bg-gray-300 aspect-square rounded-sm blur-sm"
