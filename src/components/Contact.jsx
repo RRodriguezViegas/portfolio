@@ -6,23 +6,6 @@ function Contact() {
   const [hora, setHora] = useState("");
   const form = useRef();
 
-  useEffect(() => {
-    const actualizarHora = () => {
-      const opciones = {
-        timeZone: "America/Argentina/Buenos_Aires",
-        hour12: false,
-      };
-      const fecha = new Date();
-      const horaLocal = fecha.toLocaleTimeString("es-AR", opciones);
-      setHora(horaLocal);
-    };
-
-    actualizarHora();
-    const intervalo = setInterval(actualizarHora, 1000);
-
-    return () => clearInterval(intervalo);
-  }, []);
-
   const sendEmail = e => {
     e.preventDefault();
 
