@@ -1,9 +1,8 @@
 import React from "react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
-  const [hora, setHora] = useState("");
   const form = useRef();
 
   const sendEmail = e => {
