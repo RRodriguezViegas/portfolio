@@ -138,12 +138,69 @@ function Contact() {
             </div>
           </div>
         </section>
-        <section className="w-full xl:w-1/2 h-full custom-shadow bg-white rounded-xl p-12">
+        <section className="w-full xl:w-1/2 h-full custom-shadow bg-white rounded-xl p-16">
           <span className="text-lg font-medium">
             Completá el formulario y en breve te respondo con una propuesta
             personalizada.{" "}
             <span className="font-semibold">¡El presupuesto es sin cargo!</span>
           </span>
+
+          <form onSubmit={sendEmail} ref={form}>
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 mt-10 ">
+              <div>
+                <label htmlFor="name">Nombre</label>
+                <input
+                  type="text"
+                  name="name"
+                  className="w-full bg-gray-200 rounded-md p-3"
+                />
+              </div>
+              <div className="">
+                <label htmlFor="name"> Email</label>
+                <input
+                  type="email"
+                  name="name"
+                  className="w-full bg-gray-200 rounded-md p-3"
+                />
+              </div>
+              <div className="">
+                <label htmlFor="name"> Empresa (opcional)</label>
+                <input
+                  type="text"
+                  name="name"
+                  className="w-full bg-gray-200 rounded-md p-3"
+                />
+              </div>
+              <div className="">
+                <label htmlFor="name"> Presupuesto (opcional)</label>
+                <input
+                  type="text"
+                  name="name"
+                  className="w-full bg-gray-200 rounded-md p-3"
+                />
+              </div>
+              <div className="col-span-2">
+                <label htmlFor="name"> Mensaje</label>
+                <textarea
+                  type="text"
+                  name="name"
+                  className="w-full h-32 max-h-56 min-h-32 bg-gray-200 rounded-md p-3"
+                />
+              </div>
+            </div>
+
+            <button type="submit" className=" underline mt-4">
+              Enviar consulta &rarr;
+            </button>
+          </form>
+          <hr class="border-t border-black my-8" />
+          <div className="space-y-2">
+            <span className="block mt-10 text-xl font-semibold">
+              Podés contactarte directamente a traves de:
+            </span>
+            <span className="block text-lg">ramirorvdev@gmail.com</span>
+            <span className="block text-lg">+54 9 11 4146 1834</span>
+          </div>
         </section>
       </div>
     </div>
