@@ -74,7 +74,7 @@ function ElFortinDetail() {
   });
 
   return (
-    <div className="bg-appear fonts bg-[#ffffff] h-full w-full text-[#000000] contact-bg flex flex-col justify-center">
+    <div className="bg-appear fonts bg-[#ffffff] h-full w-full text-[#000000] flex flex-col justify-center">
       <section className="w-full md:w-3/4 self-center">
         <div className="appear mt-24 md:mt-32 mx-4 md:mx-0">
           <h1 className="text-6xl 2xl:text-9xl font-bold fortin ">EL FORTIN</h1>
