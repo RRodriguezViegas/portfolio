@@ -22,14 +22,21 @@
 html {
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-  background-image: radial-gradient(75% 75% at 0% 83%,
-      #c0c0c038 0%,
-      #073aff00 100%),
-    radial-gradient(75% 75% at 79% 56%, #ffffff4d 0%, #073aff00 99%),
-    radial-gradient(75% 75% at 91% 6%, #ebebeb6e 0%, #073aff00 100%),
-    radial-gradient(75% 75% at 58% 101%, #e5e5e56e 0%, #073aff00 100%),
-    radial-gradient(75% 75% at 12% 22%, #e6e6e6 18%, #073aff00 99%),
-    radial-gradient(142% 91% at -6% 74%, #e4e4e4 1%, #e1e1e1 99%);
+  background-color: #e6e6e6;
+}
+
+.contact-bg {
+  /* --tw-blur: blur(100px); */
+  background-size: 100% 100%;
+  background-position: 0px 0px,0px 0px,0px 0px,0px 0px;
+  background-image: radial-gradient(30% 30% at 22% 70%, #0F3FFFA5 0%, #9028FF00 99%),
+                    radial-gradient(25% 25% at 55% 25%, #9028FFA5 0%, #9028FF00 99%),
+                    radial-gradient(33% 25% at 38% 46%, #06C9FFA5 0%, #9028FF00 99%),
+                    radial-gradient(142% 91% at 111% 84%, #e6e6e6 0%, #e6e6e6 99%);
+}
+
+.custom-shadow {
+  box-shadow: 20px 20px 40px 4px #00000031;
 }
 
 .fonts {
