@@ -110,7 +110,7 @@ function Home({ sections }) {
 
     gsap.to(".parallax-blob-rot-1", {
       rotateZ: 360,
-      duration: 50,
+      duration: 20,
       ease: "power1.inOut",
       repeat: -1,
       yoyo: true,
@@ -118,7 +118,7 @@ function Home({ sections }) {
 
     gsap.to(".parallax-blob-rot-2", {
       rotateZ: 360,
-      duration: 30,
+      duration: 20,
       ease: "power1.inOut",
       repeat: -1,
       yoyo: true,
