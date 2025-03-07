@@ -30,9 +30,9 @@ function Contact() {
   return (
     <div className="section fonts h-full xl:h-screen my-20 flex items-center justify-center text-[#242038]">
       <div className="absolute contact-bg blur-3xl w-full h-full" />
-      <div className="relative w-3/4 h-5/6 flex flex-col xl:flex-row ">
-        <section className="relative w-full xl:w-1/2 h-full pr-12">
-          <span className="text-7xl text-[#00075A] font-bold block">
+      <div className="relative w-full xl:w-3/4 px-4 h-5/6 flex flex-col xl:flex-row ">
+        <section className="relative w-full xl:w-1/2 h-full mb-8 xl:pr-12">
+          <span className="text-3xl xl:text-7xl text-[#00075A] font-bold block">
             Contame sobre tu proyecto
           </span>
           <span className="text-lg font-medium block mt-10 mb-20">
@@ -138,7 +138,7 @@ function Contact() {
             </div>
           </div>
         </section>
-        <section className="w-full xl:w-1/2 h-full custom-shadow bg-white rounded-xl p-16">
+        <section className="w-full xl:w-1/2 h-full custom-shadow bg-white rounded-xl p-8 xl:p-16">
           <span className="text-lg font-medium">
             Completá el formulario y en breve te respondo con una propuesta
             personalizada.{" "}
@@ -146,8 +146,8 @@ function Contact() {
           </span>
 
           <form onSubmit={sendEmail} ref={form}>
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 mt-10 ">
-              <div>
+            <div className="grid grid-cols-1 xl:grid-cols-2 xl:gap-4 mt-10 space-y-4 xl:space-y-0">
+              <div className="">
                 <label htmlFor="name">Nombre</label>
                 <input
                   type="text"
@@ -155,6 +155,7 @@ function Contact() {
                   className="w-full bg-gray-200 rounded-md p-3"
                 />
               </div>
+              <br className="xl:hidden" />
               <div className="">
                 <label htmlFor="name"> Email</label>
                 <input
@@ -163,6 +164,7 @@ function Contact() {
                   className="w-full bg-gray-200 rounded-md p-3"
                 />
               </div>
+              <br className="xl:hidden" />
               <div className="">
                 <label htmlFor="name"> Empresa (opcional)</label>
                 <input
@@ -171,6 +173,7 @@ function Contact() {
                   className="w-full bg-gray-200 rounded-md p-3"
                 />
               </div>
+              <br className="xl:hidden" />
               <div className="">
                 <label htmlFor="name"> Presupuesto (opcional)</label>
                 <input
