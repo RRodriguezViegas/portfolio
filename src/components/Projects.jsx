@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 function Projects() {
   return (
     <div className="about-bg pt-10 section h-full lg:h-screen flex flex-col items-center justify-center md:text-center mx-4 md:mx-0">
-      <h1 className="pr-appear MuseoModerno text-4xl lg:text-7xl font-bold text-[#242038]">
+      <h1 className="pr-appear fonts text-4xl lg:text-7xl font-bold text-[#242038]">
         Algunos de mis proyectos
       </h1>
-      <p className="pr-appear text-xl lg:text-2xl text-[#242038] py-4">
+      <p className="pr-appear fonts text-xl lg:text-2xl text-[#242038] py-4">
         Una selección de proyectos que muestran mis habilidades como
         desarrollador
       </p>
