@@ -144,7 +144,7 @@ function Home({ sections }) {
 
   return (
     <>
-      <div className="bg-appear home-bg section h-screen relative flex justify-center">
+      <div className="bg-appear home-bg section fonts h-screen relative flex justify-center">
         <div className="absolute w-1/2 h-screen left-0 hidden lg:flex flex-col justify-center bg-[#3a5bff3a] opacity-90 blur-3xl">
           <svg
             viewBox="0 0 200 200"
