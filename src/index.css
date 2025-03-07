@@ -139,8 +139,8 @@ html {
 }
 
 ::selection {
-  background-color: #242038;
-  color: #f7ece1;
+  background-color: #e5e5e5;
+  color: #1b276e;
 }
 
 .highlight {
