@@ -35,7 +35,7 @@ function Contact() {
           <span className="text-3xl xl:text-7xl text-[#00075A] font-bold block">
             Contame sobre tu proyecto
           </span>
-          <span className="text-lg font-medium block mt-10 mb-20">
+          <span className="text-lg font-medium block mt-8 mb-16 xl:mt-10 xl:mb-20">
             Cada proyecto es único, y quiero asegurarme de que el tuyo tenga
             todo lo que necesitás. Así es como trabajaremos juntos para
             lograrlo:
