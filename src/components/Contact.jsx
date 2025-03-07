@@ -28,7 +28,7 @@ function Contact() {
   };
 
   return (
-    <div className="section fonts h-full xl:h-screen my-20 flex items-center justify-center text-[#242038]">
+    <div className="section relative fonts h-full xl:h-screen my-20 flex items-center justify-center text-[#242038]">
       <div className="absolute contact-bg blur-3xl w-full h-full" />
       <div className="relative w-full xl:w-3/4 px-4 h-5/6 flex flex-col xl:flex-row ">
         <section className="relative w-full xl:w-1/2 h-full mb-8 xl:pr-12">
