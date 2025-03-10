@@ -153,40 +153,42 @@ function Contact() {
                   type="text"
                   name="name"
                   className="w-full bg-gray-200 rounded-md p-3"
+                  required
                 />
               </div>
               <br className="xl:hidden" />
               <div className="">
-                <label htmlFor="name"> Email</label>
+                <label htmlFor="user_email"> Email</label>
                 <input
                   type="email"
-                  name="name"
+                  name="user_email"
+                  className="w-full bg-gray-200 rounded-md p-3"
+                  required
+                />
+              </div>
+              <br className="xl:hidden" />
+              <div className="">
+                <label htmlFor="company"> Empresa (opcional)</label>
+                <input
+                  type="text"
+                  name="company"
                   className="w-full bg-gray-200 rounded-md p-3"
                 />
               </div>
               <br className="xl:hidden" />
               <div className="">
-                <label htmlFor="name"> Empresa (opcional)</label>
+                <label htmlFor="budget"> Presupuesto (opcional)</label>
                 <input
                   type="text"
-                  name="name"
-                  className="w-full bg-gray-200 rounded-md p-3"
-                />
-              </div>
-              <br className="xl:hidden" />
-              <div className="">
-                <label htmlFor="name"> Presupuesto (opcional)</label>
-                <input
-                  type="text"
-                  name="name"
+                  name="budget"
                   className="w-full bg-gray-200 rounded-md p-3"
                 />
               </div>
               <div className="col-span-2">
-                <label htmlFor="name"> Mensaje</label>
+                <label htmlFor="message"> Mensaje</label>
                 <textarea
                   type="text"
-                  name="name"
+                  name="message"
                   className="w-full h-32 max-h-56 min-h-32 bg-gray-200 rounded-md p-3"
                 />
               </div>
