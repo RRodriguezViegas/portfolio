@@ -63,14 +63,14 @@ function Contact() {
                   fill="#5921B9"
                 />
               </svg>
-              <span className="absolute left-8 -top-6 text-xl font-semibold text-[#00075A]">
+              <p className="absolute left-8 -top-6 text-xl font-semibold text-[#00075A]">
                 1. Te envío una propuesta
-              </span>
-              <span className="text-lg font-light block px-8 pt-4 pb-10">
+              </p>
+              <p className="text-lg font-light block px-8 pt-4 pb-10">
                 Con la información que me des en el formulario, analizo qué
                 necesitás y te armo una propuesta inicial. Esto incluye ideas de
                 diseño, funcionalidades y una estimación de tiempo y costo.
-              </span>
+              </p>
             </div>
 
             <div className="relative border-l-2 border-[#5921B9]">
@@ -95,14 +95,14 @@ function Contact() {
                   fill="#5921B9"
                 />
               </svg>
-              <span className="text-xl font-semibold px-8 text-[#00075A]">
+              <p className="text-xl font-semibold px-8 text-[#00075A]">
                 2. Ajustamos juntos los detalles
-              </span>
-              <span className="text-lg font-light block px-8 pt-3 pb-10">
+              </p>
+              <p className="text-lg font-light block px-8 pt-3 pb-10">
                 Te comparto la propuesta y charlamos para hacer los cambios
                 necesarios. Podés contarme si hay algo que te gustaría agregar o
                 modificar hasta que lleguemos a la mejor versión para vos.
-              </span>
+              </p>
             </div>
 
             <div className="relative border-l-2 border-[#ffffff00]">
@@ -127,14 +127,14 @@ function Contact() {
                   fill="#5921B9"
                 />
               </svg>
-              <span className="text-xl font-semibold px-8 text-[#00075A]">
+              <p className="text-xl font-semibold px-8 text-[#00075A]">
                 3. Empezamos con el proyecto
-              </span>
-              <span className="text-lg font-light block px-8 pt-3">
+              </p>
+              <p className="text-lg font-light block px-8 pt-3">
                 Una vez que todo esté definido, pongo manos a la obra. Durante
                 el proceso te voy mostrando avances y ajustes para que el
                 resultado sea exactamente lo que esperás.
-              </span>
+              </p>
             </div>
           </div>
         </section>
