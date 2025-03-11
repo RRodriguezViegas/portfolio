@@ -199,9 +199,9 @@ function Contact() {
               Enviar consulta &rarr;
             </button>
           </form>
-          <hr class="border-t border-black my-8" />
+          <hr class="border-t border-black my-8 xl:my-3 3xl:my-8" />
           <div className="space-y-2">
-            <span className="block mt-10 text-xl font-semibold">
+            <span className="block mt-10 xl:mt-3 3xl:mt-10 text-xl font-semibold">
               Podés contactarte directamente a traves de:
             </span>
             <span className="block text-lg">ramirorvdev@gmail.com</span>
