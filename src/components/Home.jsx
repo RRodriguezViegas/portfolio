@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
 
 function Home({ sections }) {
-  const isDesktop = () => window.innerWidth > 1024;
+  const isDesktop = () => window.innerWidth > 1440;
 
   useEffect(() => {
     if (isDesktop()) {
