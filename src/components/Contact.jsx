@@ -139,7 +139,7 @@ function Contact() {
             </div>
           </div>
         </section>
-        <section className="w-full xl:w-1/2 h-full custom-shadow bg-white rounded-xl p-8 xl:p-16">
+        <section className="w-full xl:w-6/12 3xl:w-1/2 h-full custom-shadow bg-white rounded-xl p-8 3xl:p-16">
           <span className="text-lg font-medium">
             Completá el formulario y en breve te respondo con una propuesta
             personalizada.{" "}
