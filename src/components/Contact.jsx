@@ -204,8 +204,12 @@ function Contact() {
             <span className="block mt-10 xl:mt-3 3xl:mt-10 text-xl font-semibold">
               Podés contactarte directamente a traves de:
             </span>
-            <span className="block text-lg">ramirorvdev@gmail.com</span>
-            <span className="block text-lg">+54 9 11 4146 1834</span>
+            <div className="hidden xl:grid 3xl:hidden grid-cols-2 text-center">
+              <p className="text-lg text-left">ramirorvdev@gmail.com</p>
+              <p className="text-lg text-center">+54 9 11 4146 1834</p>
+            </div>
+            <p className="text-lg xl:hidden 3xl:block">ramirorvdev@gmail.com</p>
+            <p className="text-lg xl:hidden 3xl:block">+54 9 11 4146 1834</p>
           </div>
         </section>
       </div>
