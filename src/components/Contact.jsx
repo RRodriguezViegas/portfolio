@@ -29,13 +29,14 @@ function Contact() {
 
   return (
     <div className="section relative fonts h-full xl:h-screen my-20 flex items-center justify-center text-[#242038]">
-      <div className="absolute contact-bg blur-3xl w-full h-full" />
-      <div className="relative w-full xl:w-3/4 px-4 h-5/6 flex flex-col xl:flex-row ">
-        <section className="relative w-full xl:w-1/2 h-full mb-8 xl:pr-12">
-          <span className="text-3xl xl:text-7xl text-[#00075A] font-bold block">
+      <div className="absolute contact-bg blur-3xl w-full h-full opacity-70 lg:opacity-100" />
+
+      <div className="relative w-full xl:w-5/6 3xl:w-3/4 px-4 lg:px-32 xl:px-4 h-5/6 flex flex-col xl:flex-row ">
+        <section className="relative w-full xl:w-8/12 3xl:1/2 h-full mb-8 xl:pr-12">
+          <span className="text-4xl md:text-5xl 2xl:text-7xl text-[#00075A] font-bold block text-center xl:text-left">
             Contame sobre tu proyecto
           </span>
-          <span className="text-lg font-medium block mt-8 mb-16 xl:mt-10 xl:mb-20">
+          <span className="text-xl lg:text-2xl xl:text-lg font-medium block mt-8 mb-16 xl:mt-4 2xl:mt-10 2xl:mb-20">
             Cada proyecto es único, y quiero asegurarme de que el tuyo tenga
             todo lo que necesitás. Así es como trabajaremos juntos para
             lograrlo:
