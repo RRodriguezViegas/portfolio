@@ -22,7 +22,7 @@ gsap.registerPlugin(ScrollToPlugin);
 function AppContent() {
   const [sections, setSections] = useState([]);
   const location = useLocation();
-  const isDesktop = () => window.innerWidth > 1024;
+  const isDesktop = () => window.innerWidth > 1440;
 
   if (isDesktop()) {
     useEffect(() => {
