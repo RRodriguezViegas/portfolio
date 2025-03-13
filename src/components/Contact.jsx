@@ -43,7 +43,7 @@ function Contact() {
           </span>
           <div>
             <div className="relative border-l-2 border-[#5921B9]">
-              <svg
+              {/* <svg
                 width="22"
                 height="22"
                 viewBox="0 0 22 22"
@@ -63,6 +63,18 @@ function Contact() {
                   d="M11 18C14.866 18 18 14.866 18 11C18 7.13401 14.866 4 11 4C7.13401 4 4 7.13401 4 11C4 14.866 7.13401 18 11 18ZM11 15C13.2091 15 15 13.2091 15 11C15 8.79086 13.2091 7 11 7C8.79086 7 7 8.79086 7 11C7 13.2091 8.79086 15 11 15Z"
                   fill="#5921B9"
                 />
+              </svg> */}
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute -left-3 -top-5 mr-2"
+              >
+                <circle cx="11" cy="11" r="11" fill="#133695" />
+                <circle cx="11" cy="11" r="7" fill="#5921B9" />
+                <circle cx="11" cy="11" r="4" fill="#E1E1E1" />
               </svg>
               <p className="absolute left-8 -top-6 text-xl font-semibold text-[#00075A]">
                 1. Te envío una propuesta
@@ -75,7 +87,7 @@ function Contact() {
             </div>
 
             <div className="relative border-l-2 border-[#5921B9]">
-              <svg
+              {/* <svg
                 width="22"
                 height="22"
                 viewBox="0 0 22 22"
@@ -95,6 +107,18 @@ function Contact() {
                   d="M11 18C14.866 18 18 14.866 18 11C18 7.13401 14.866 4 11 4C7.13401 4 4 7.13401 4 11C4 14.866 7.13401 18 11 18ZM11 15C13.2091 15 15 13.2091 15 11C15 8.79086 13.2091 7 11 7C8.79086 7 7 8.79086 7 11C7 13.2091 8.79086 15 11 15Z"
                   fill="#5921B9"
                 />
+              </svg> */}
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute -left-3 mr-2"
+              >
+                <circle cx="11" cy="11" r="11" fill="#133695" />
+                <circle cx="11" cy="11" r="7" fill="#5921B9" />
+                <circle cx="11" cy="11" r="4" fill="#E1E1E1" />
               </svg>
               <p className="text-xl font-semibold px-8 text-[#00075A]">
                 2. Ajustamos juntos los detalles
@@ -107,7 +131,7 @@ function Contact() {
             </div>
 
             <div className="relative border-l-2 border-[#ffffff00]">
-              <svg
+              {/* <svg
                 width="22"
                 height="22"
                 viewBox="0 0 22 22"
@@ -127,6 +151,18 @@ function Contact() {
                   d="M11 18C14.866 18 18 14.866 18 11C18 7.13401 14.866 4 11 4C7.13401 4 4 7.13401 4 11C4 14.866 7.13401 18 11 18ZM11 15C13.2091 15 15 13.2091 15 11C15 8.79086 13.2091 7 11 7C8.79086 7 7 8.79086 7 11C7 13.2091 8.79086 15 11 15Z"
                   fill="#5921B9"
                 />
+              </svg> */}
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute -left-3 mr-2"
+              >
+                <circle cx="11" cy="11" r="11" fill="#133695" />
+                <circle cx="11" cy="11" r="7" fill="#5921B9" />
+                <circle cx="11" cy="11" r="4" fill="#E1E1E1" />
               </svg>
               <p className="text-xl font-semibold px-8 text-[#00075A]">
                 3. Empezamos con el proyecto
@@ -139,7 +175,7 @@ function Contact() {
             </div>
           </div>
         </section>
-        <section className="w-full xl:w-6/12 3xl:w-1/2 h-full custom-shadow bg-white rounded-xl p-8 3xl:p-16">
+        <section className="w-full relative overflow-hidden xl:w-6/12 3xl:w-1/2 h-full max-h-[1100px] custom-shadow bg-white rounded-xl p-8 3xl:p-16">
           <span className="text-lg font-medium">
             Completá el formulario y en breve te respondo con una propuesta
             personalizada.{" "}
