@@ -95,7 +95,9 @@ function AppContent() {
             <Separador />
             <Projects />
             {/* <SeparadorPC /> */}
+            <Separador />
             <Contact />
+            <Separador />
             {/* <SeparadorFinal /> */}
             <Footer sections={sections} />
           </>
