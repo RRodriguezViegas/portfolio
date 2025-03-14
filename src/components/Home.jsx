@@ -338,13 +338,6 @@ function Home({ sections }) {
           </svg>
         </div>
 
-        {/* <div className="w-3/4 pt-12 flex flex-col items-center z-10">
-          <h1 className="text-2xl lg:text-5xl text-[#242038]">
-            &lt;Rama /&gt;
-          </h1>
-          <img src="LOGO.png" alt="" />
-          <HamburgerMenu sections={sections} />
-        </div> */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center h-full">
           <div className="flex flex-col items-center">
             <h1 className="z-50 appear text-xl lg:text-3xl text-[#242038]">
