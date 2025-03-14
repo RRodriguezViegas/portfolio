@@ -10,8 +10,6 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Separador from "./components/Separador.jsx";
-import SeparadorPC from "./components/SeparadorPC.jsx";
-import SeparadorFinal from "./components/Separador-final.jsx";
 import ElFortinDetail from "./components/El-Fortin-Detail.jsx";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
@@ -94,11 +92,9 @@ function AppContent() {
             <Home sections={sections} />
             <Separador />
             <Projects />
-            {/* <SeparadorPC /> */}
             <Separador />
             <Contact />
             <Separador />
-            {/* <SeparadorFinal /> */}
             <Footer sections={sections} />
           </>
         }
