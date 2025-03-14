@@ -294,8 +294,8 @@ function ElFortinDetail() {
         </div>
       </section>
 
-      <section className="appear-at-scroll flex flex-col space-y-4 w-full md:w-3/4 my-6 lg:my-12 self-center">
-        <div className="flex md:space-x-4 justify-center mx-4 md:mx-0 aspect-[16/5] rounded-md">
+      <section className="appear-at-scroll flex flex-col space-y-4 mx-4 md:mx-0 md:w-3/4 my-6 lg:my-12 self-center">
+        <div className="flex md:space-x-4 justify-center aspect-[16/5] rounded-md">
           <img
             src="elfortin-files/elfortin-palette.svg"
             alt="Paleta de colores de El Fortin"
@@ -307,11 +307,12 @@ function ElFortinDetail() {
             className="w-1/2"
           />
         </div>
+
         <div className="aspect-[16/9]">
           <img
             src="elfortin-files/elfortin-diseno-1.svg"
             alt="Componente de El Fortin"
-            className="rounded-md mx-2 md:mx-0"
+            className="rounded-md"
           />
         </div>
 
@@ -319,20 +320,24 @@ function ElFortinDetail() {
           <img
             src="elfortin-files/elfortin-diseno-2.svg"
             alt="Componentes de El Fortin"
-            className="rounded-md mx-2 md:mx-0"
+            className="rounded"
           />
         </div>
       </section>
 
-      <section className="opacity-1 flex w-3/4 my-6 self-center">
+      <section className="opacity-1 flex flex-col w-3/4 my-24 self-center justify-center items-center">
         <a
           href="http://localhost:5173"
-          className="flex flex-col items-center bg-[#00000011] w-1/2 h-96 border border-[#2e2e2e11] hover:bg-[#00000093] transition-all duration-100"
-        ></a>
+          className="group px-12 py-6 relative overflow-hidden rounded-full border border-slate-900 hover:bg-[#000000] hover:text-white ease-in duration-100 font-light text-xl"
+        >
+          Contactame &rarr;
+        </a>
         <a
-          href="http://localhost:5173/woofer"
-          className="flex flex-col items-center bg-[#00000011] w-1/2 h-96 border border-[#2e2e2e11] hover:bg-[#00000093] transition-all duration-100"
-        ></a>
+          href="http://localhost:5173"
+          className="underline my-4 text-xl font-light hover:no-underline"
+        >
+          Atrás
+        </a>
       </section>
     </div>
   );
